@@ -509,15 +509,15 @@
       "color": "gold",
       "docs": [
        {
-  "file": "Presentations/DEVONEERS_RootRise_AI-Powered_Dec_2025.pdf",
-  "name": "18th Dec Update by Doaa",
-  "description": "slides for development organizations. We have reshuffled the sequence of the slides to be: RootRise technical concept, RootRise Platform, The team, Commercialization and Growth pathway.",
-  "category": "Partner",
-  "icon": "🤝",
-  "size": "13.7 MB",
-  "featured": false,
-  "dateAdded": "2025-12-18"
-},
+          "file": "Presentations/DEVONEERS_RootRise_AI-Powered_Dec_2025.pdf",
+          "name": "18th Dec Update by Doaa",
+          "description": "Slides for development organizations. Reshuffled sequence: RootRise technical concept, Platform, Team, Commercialization and Growth pathway.",
+          "category": "Partner",
+          "icon": "🤝",
+          "size": "13.7 MB",
+          "featured": false,
+          "dateAdded": "2025-12-18"
+        },
         {
           "file": "Presentations/RootRise_by_DEVONEERS_v2_compressed.pdf",
           "name": "RootRise by DEVONEERS v2",
