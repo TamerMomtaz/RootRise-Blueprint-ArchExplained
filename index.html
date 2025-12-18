@@ -1,0 +1,810 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RootRise Blueprint & ArchExplained | DEVONEERS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ═══════════════════════════════════════════════════════════════
+           BASE COLORS (v6.5 Final - Shared across all themes)
+           ═══════════════════════════════════════════════════════════════ */
+        :root {
+            --gold-primary: #B8904A;
+            --gold-card: #EDE0C8;
+            --gold-card-hover: #E5D5B8;
+            --champagne: #F7E7CE;
+            --cream: #F5F1E8;
+            --cream-warm: #F0EBE0;
+            --pearl: #E8E0D0;
+            --teal: #2A5C5C;
+            --teal-deep: #1E4A4A;
+            --teal-dark-bg: #0D2626;
+            --teal-card-dark: #153838;
+            --burgundy: #722F37;
+            --burgundy-tint: #F5E8EA;
+            --text-dark: #1A1A1A;
+            --text-medium: #4A4A4A;
+            --text-light: #6A6A6A;
+            --text-white: #FFFFFF;
+            --text-cream: #F5F1E8;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 1: LIGHT (Default)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="light"] {
+            --bg-page: var(--cream);
+            --bg-card: var(--gold-card);
+            --bg-card-hover: var(--gold-card-hover);
+            --bg-hero: var(--cream);
+            --border-primary: #C9B896;
+            --border-subtle: #D4CFC4;
+            --accent-primary: var(--teal);
+            --accent-secondary: var(--gold-primary);
+            --text-primary: var(--text-dark);
+            --text-secondary: var(--text-medium);
+            --text-muted: var(--text-light);
+            --text-on-accent: var(--text-white);
+            --title-color: var(--teal);
+            --brand-color: var(--gold-primary);
+            --nav-bg: var(--gold-card);
+            --nav-active: var(--teal);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 2: TEAL (Dark)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="teal"] {
+            --bg-page: var(--teal-dark-bg);
+            --bg-card: var(--teal-card-dark);
+            --bg-card-hover: var(--teal-deep);
+            --bg-hero: var(--teal-dark-bg);
+            --border-primary: var(--teal);
+            --border-subtle: #1E4A4A;
+            --accent-primary: var(--gold-primary);
+            --accent-secondary: var(--champagne);
+            --text-primary: var(--text-cream);
+            --text-secondary: #B8C4C4;
+            --text-muted: #8A9E9E;
+            --text-on-accent: var(--text-dark);
+            --title-color: var(--champagne);
+            --brand-color: var(--gold-primary);
+            --nav-bg: var(--teal-card-dark);
+            --nav-active: var(--gold-primary);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 3: BURGUNDY (Contrast)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="burgundy"] {
+            --bg-page: var(--teal-dark-bg);
+            --bg-card: var(--gold-card);
+            --bg-card-hover: var(--gold-card-hover);
+            --bg-hero: var(--gold-card);
+            --border-primary: var(--gold-primary);
+            --border-subtle: var(--teal);
+            --accent-primary: var(--burgundy);
+            --accent-secondary: var(--gold-primary);
+            --text-primary: var(--champagne);
+            --text-secondary: #C4B8A8;
+            --text-muted: #A89888;
+            --text-on-accent: var(--text-white);
+            --title-color: var(--gold-primary);
+            --brand-color: var(--gold-primary);
+            --nav-bg: var(--gold-card);
+            --nav-active: var(--burgundy);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 4: GOLD (Warm)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="gold"] {
+            --bg-page: var(--gold-card);
+            --bg-card: var(--champagne);
+            --bg-card-hover: var(--cream);
+            --bg-hero: var(--gold-card);
+            --border-primary: var(--gold-primary);
+            --border-subtle: #C9B896;
+            --accent-primary: var(--teal);
+            --accent-secondary: var(--teal);
+            --text-primary: var(--text-dark);
+            --text-secondary: var(--text-medium);
+            --text-muted: var(--text-light);
+            --text-on-accent: var(--text-white);
+            --title-color: var(--teal);
+            --brand-color: var(--gold-primary);
+            --nav-bg: var(--champagne);
+            --nav-active: var(--teal);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--bg-page);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            transition: background 0.4s ease, color 0.4s ease;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME SWITCHER
+           ═══════════════════════════════════════════════════════════════ */
+        .theme-switcher {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: var(--bg-card);
+            border-radius: 50px;
+            padding: 10px 6px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border: 1px solid var(--border-primary);
+            transition: background 0.4s ease;
+        }
+
+        .theme-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .theme-btn:hover { transform: scale(1.1); }
+        .theme-btn.active { border-color: var(--text-primary); transform: scale(1.15); }
+
+        .theme-btn.light-btn { background: linear-gradient(135deg, #F5F1E8 50%, #EDE0C8 50%); }
+        .theme-btn.teal-btn { background: linear-gradient(135deg, #0D2626 50%, #153838 50%); }
+        .theme-btn.burgundy-btn { background: linear-gradient(135deg, #0D2626 50%, #722F37 50%); }
+        .theme-btn.gold-btn { background: linear-gradient(135deg, #EDE0C8 50%, #B8904A 50%); }
+
+        @media (max-width: 768px) {
+            .theme-switcher {
+                left: 10px;
+                top: auto;
+                bottom: 20px;
+                transform: none;
+                flex-direction: row;
+                border-radius: 30px;
+                padding: 6px 10px;
+            }
+            .theme-btn { width: 30px; height: 30px; }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           HEADER
+           ═══════════════════════════════════════════════════════════════ */
+        header {
+            text-align: center;
+            padding: 50px 20px 40px;
+            background: var(--bg-hero);
+            border-bottom: 4px solid var(--brand-color);
+            position: relative;
+            transition: background 0.4s ease;
+        }
+
+        header::before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            background: url('data:image/svg+xml,<svg width="60" height="60" xmlns="http://www.w3.org/2000/svg"><circle cx="30" cy="30" r="1.5" fill="rgba(184,144,74,0.08)"/></svg>');
+            opacity: 0.6;
+            pointer-events: none;
+        }
+
+        .logo-container {
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .logo-container img {
+            width: 90px;
+            height: 90px;
+            border-radius: 50%;
+            box-shadow: 0 0 0 4px rgba(184, 144, 74, 0.3), 0 8px 30px rgba(0, 0, 0, 0.15);
+        }
+
+        .version-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 15px;
+            background: var(--bg-card);
+            border: 1px solid var(--border-primary);
+            padding: 8px 20px;
+            border-radius: 30px;
+            font-size: 12px;
+            margin-bottom: 20px;
+            position: relative;
+            z-index: 1;
+            transition: background 0.4s ease;
+        }
+
+        .version-badge span {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            color: var(--text-secondary);
+        }
+
+        .version-badge strong {
+            color: var(--accent-primary);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            font-size: 40px;
+            font-weight: 600;
+            letter-spacing: 3px;
+            margin-bottom: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        h1 .root { color: var(--title-color); }
+        h1 .rise { color: var(--brand-color); }
+
+        .subtitle {
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            color: var(--brand-color);
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+            position: relative;
+            z-index: 1;
+        }
+
+        .tagline {
+            color: var(--text-secondary);
+            font-size: 14px;
+            max-width: 550px;
+            margin: 0 auto;
+            position: relative;
+            z-index: 1;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           NAVIGATION
+           ═══════════════════════════════════════════════════════════════ */
+        .nav-tabs {
+            display: flex;
+            justify-content: center;
+            gap: 6px;
+            padding: 14px 20px;
+            background: var(--nav-bg);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-bottom: 1px solid var(--border-subtle);
+            flex-wrap: wrap;
+            transition: background 0.4s ease;
+        }
+
+        .nav-tab {
+            padding: 10px 18px;
+            border-radius: 10px;
+            font-size: 13px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--text-secondary);
+            background: transparent;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .nav-tab:hover {
+            background: var(--bg-card-hover);
+            color: var(--accent-primary);
+        }
+
+        .nav-tab.active {
+            background: var(--nav-active);
+            color: var(--text-on-accent);
+            border-color: var(--nav-active);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+
+        .nav-tab .count {
+            background: rgba(0,0,0,0.1);
+            padding: 2px 8px;
+            border-radius: 10px;
+            font-size: 11px;
+        }
+
+        .nav-tab.active .count {
+            background: rgba(255,255,255,0.25);
+        }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* ═══════════════════════════════════════════════════════════════
+           SECTIONS
+           ═══════════════════════════════════════════════════════════════ */
+        .section {
+            display: none;
+            padding: 50px 0;
+            animation: fadeIn 0.4s ease;
+        }
+
+        .section.active { display: block; }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .section-header { margin-bottom: 30px; }
+
+        .section-label {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: var(--accent-primary);
+        }
+
+        .section-label::before {
+            content: '';
+            width: 20px;
+            height: 3px;
+            border-radius: 2px;
+            background: var(--accent-primary);
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 8px;
+            color: var(--title-color);
+        }
+
+        .section-desc {
+            color: var(--text-secondary);
+            font-size: 14px;
+            max-width: 650px;
+            line-height: 1.6;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           CARD GRIDS
+           ═══════════════════════════════════════════════════════════════ */
+        .cards-grid {
+            display: grid;
+            gap: 14px;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        }
+
+        .cards-grid.compact {
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+        }
+
+        @media (max-width: 700px) {
+            .cards-grid, .cards-grid.compact {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           DOCUMENT CARDS
+           ═══════════════════════════════════════════════════════════════ */
+        .doc-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-primary);
+            border-radius: 14px;
+            padding: 20px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: flex-start;
+            gap: 14px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .doc-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.1);
+        }
+
+        .doc-card.featured {
+            grid-column: 1 / -1;
+            background: var(--champagne);
+            border-color: var(--brand-color);
+        }
+
+        .doc-icon {
+            width: 48px;
+            height: 48px;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            flex-shrink: 0;
+            background: var(--accent-primary);
+        }
+
+        .doc-info { flex: 1; min-width: 0; }
+
+        .doc-category {
+            display: inline-block;
+            background: var(--accent-primary);
+            color: var(--text-on-accent);
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 9px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 6px;
+        }
+
+        .doc-name {
+            font-family: 'Cinzel', serif;
+            font-size: 15px;
+            font-weight: 600;
+            margin-bottom: 4px;
+            color: var(--title-color);
+            line-height: 1.3;
+        }
+
+        .doc-desc {
+            font-size: 12px;
+            color: var(--text-secondary);
+            line-height: 1.5;
+        }
+
+        .doc-meta {
+            display: flex;
+            gap: 8px;
+            margin-top: 10px;
+            flex-wrap: wrap;
+        }
+
+        .doc-size {
+            display: inline-block;
+            padding: 3px 8px;
+            background: var(--bg-page);
+            color: var(--text-muted);
+            border-radius: 6px;
+            font-size: 10px;
+            font-weight: 500;
+            border: 1px solid var(--border-subtle);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           SECTOR CARDS (Compact)
+           ═══════════════════════════════════════════════════════════════ */
+        .sector-card {
+            background: var(--bg-card);
+            border: 2px solid var(--border-primary);
+            border-radius: 12px;
+            padding: 14px 16px;
+            cursor: pointer;
+            transition: all 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .sector-card:hover {
+            background: var(--bg-card-hover);
+            transform: translateX(4px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+        }
+
+        .sector-card.featured {
+            grid-column: 1 / -1;
+            background: var(--champagne);
+            border-color: var(--accent-primary);
+        }
+
+        .sector-icon {
+            width: 38px;
+            height: 38px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 18px;
+            flex-shrink: 0;
+            background: var(--accent-primary);
+        }
+
+        .sector-name {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: 13px;
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════════════════════════════ */
+        footer {
+            background: var(--bg-card);
+            border-top: 1px solid var(--border-primary);
+            padding: 35px 20px;
+            text-align: center;
+            transition: background 0.4s ease;
+        }
+
+        .footer-brand {
+            font-family: 'Cinzel', serif;
+            font-size: 18px;
+            margin-bottom: 6px;
+        }
+
+        .footer-brand .root { color: var(--title-color); }
+        .footer-brand .rise { color: var(--brand-color); }
+
+        footer p {
+            color: var(--text-muted);
+            font-size: 13px;
+        }
+
+        .footer-tagline {
+            margin-top: 12px;
+            padding-top: 12px;
+            border-top: 1px solid var(--border-subtle);
+            font-size: 11px;
+            color: var(--text-muted);
+            letter-spacing: 1px;
+        }
+
+        /* Balance Bar */
+        .balance-bar {
+            display: flex;
+            height: 4px;
+            border-radius: 2px;
+            overflow: hidden;
+            max-width: 200px;
+            margin: 15px auto 0;
+        }
+
+        .balance-bar span:nth-child(1) { flex: 3; background: var(--pearl); }
+        .balance-bar span:nth-child(2) { flex: 3; background: var(--gold-primary); }
+        .balance-bar span:nth-child(3) { flex: 3; background: var(--teal); }
+        .balance-bar span:nth-child(4) { flex: 1; background: var(--burgundy); }
+
+        /* Loading State */
+        .loading {
+            text-align: center;
+            padding: 60px 20px;
+            color: var(--text-muted);
+        }
+
+        .loading::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 40px;
+            margin: 20px auto;
+            border: 3px solid var(--border-primary);
+            border-top-color: var(--accent-primary);
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+    <!-- ═══════════════════════════════════════════════════════════════
+         THEME SWITCHER
+         ═══════════════════════════════════════════════════════════════ -->
+    <div class="theme-switcher">
+        <button class="theme-btn light-btn active" data-theme="light" title="Light Theme"></button>
+        <button class="theme-btn teal-btn" data-theme="teal" title="Teal Theme"></button>
+        <button class="theme-btn burgundy-btn" data-theme="burgundy" title="Burgundy Theme"></button>
+        <button class="theme-btn gold-btn" data-theme="gold" title="Gold Theme"></button>
+    </div>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         HEADER
+         ═══════════════════════════════════════════════════════════════ -->
+    <header>
+        <div class="logo-container">
+            <img src="assets/rootrise-logo-smooth.png" alt="DEVONEERS Logo">
+        </div>
+        <div class="version-badge">
+            <span>📄 <strong id="total-docs">--</strong> Documents</span>
+            <span>📦 v<strong id="version-number">--</strong></span>
+            <span>🕐 <strong id="last-updated">--</strong></span>
+        </div>
+        <h1><span class="root">Root</span><span class="rise">Rise</span></h1>
+        <div class="subtitle">Blueprint & ArchExplained</div>
+        <p class="tagline">Complete technical documentation for The Pantheon AI-powered SME transformation platform</p>
+    </header>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         NAVIGATION (Generated by JavaScript)
+         ═══════════════════════════════════════════════════════════════ -->
+    <nav class="nav-tabs" id="nav-tabs">
+        <div class="loading">Loading navigation...</div>
+    </nav>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         CONTENT (Generated by JavaScript)
+         ═══════════════════════════════════════════════════════════════ -->
+    <main class="container" id="main-content">
+        <div class="loading">Loading documentation...</div>
+    </main>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         FOOTER
+         ═══════════════════════════════════════════════════════════════ -->
+    <footer>
+        <div class="footer-brand"><span class="root">Root</span><span class="rise">Rise</span> by DEVONEERS</div>
+        <p>30+ years of MENA SME expertise, now AI-powered</p>
+        <div class="balance-bar">
+            <span></span><span></span><span></span><span></span>
+        </div>
+        <p class="footer-tagline">The &I Philosophy — AI + Human Collaboration</p>
+    </footer>
+
+    <!-- ═══════════════════════════════════════════════════════════════
+         JAVASCRIPT - Loads from docs.json
+         ═══════════════════════════════════════════════════════════════ -->
+    <script>
+        // ═══════════════════════════════════════════════════════════════
+        // THEME SWITCHER
+        // ═══════════════════════════════════════════════════════════════
+        const themeBtns = document.querySelectorAll('.theme-btn');
+        const html = document.documentElement;
+
+        // Load saved theme
+        const savedTheme = localStorage.getItem('rootrise-theme') || 'light';
+        html.setAttribute('data-theme', savedTheme);
+        document.querySelector(`[data-theme="${savedTheme}"]`)?.classList.add('active');
+
+        themeBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const theme = btn.getAttribute('data-theme');
+                html.setAttribute('data-theme', theme);
+                localStorage.setItem('rootrise-theme', theme);
+                themeBtns.forEach(b => b.classList.remove('active'));
+                btn.classList.add('active');
+            });
+        });
+
+        // ═══════════════════════════════════════════════════════════════
+        // LOAD AND RENDER DOCUMENTATION
+        // ═══════════════════════════════════════════════════════════════
+        async function loadDocs() {
+            try {
+                const response = await fetch('docs.json');
+                const data = await response.json();
+                renderDocumentation(data);
+            } catch (error) {
+                console.error('Error loading docs.json:', error);
+                document.getElementById('main-content').innerHTML = `
+                    <div class="loading" style="color: var(--burgundy);">
+                        ⚠️ Could not load docs.json<br>
+                        <small>Make sure docs.json is in the same folder as index.html</small>
+                    </div>
+                `;
+            }
+        }
+
+        function renderDocumentation(data) {
+            const sections = data.sections;
+            const sectionKeys = Object.keys(sections);
+
+            // Calculate totals
+            let totalDocs = 0;
+            sectionKeys.forEach(key => {
+                totalDocs += sections[key].docs.length;
+            });
+
+            // Update header stats
+            document.getElementById('total-docs').textContent = totalDocs;
+            document.getElementById('version-number').textContent = data.meta.version;
+            document.getElementById('last-updated').textContent = data.meta.lastUpdated;
+
+            // Generate navigation
+            const navHtml = sectionKeys.map((key, index) => {
+                const section = sections[key];
+                return `
+                    <button class="nav-tab ${index === 0 ? 'active' : ''}" data-section="${key}">
+                        ${section.icon} ${section.label}
+                        <span class="count">${section.docs.length}</span>
+                    </button>
+                `;
+            }).join('');
+            document.getElementById('nav-tabs').innerHTML = navHtml;
+
+            // Generate sections
+            const sectionsHtml = sectionKeys.map((key, index) => {
+                const section = sections[key];
+                const isCompact = key === 'sectors';
+                
+                const cardsHtml = section.docs.map(doc => {
+                    if (isCompact && !doc.featured) {
+                        return `
+                            <a href="${doc.file}" class="sector-card ${doc.featured ? 'featured' : ''}" target="_blank">
+                                <div class="sector-icon">${doc.icon}</div>
+                                <div class="sector-name">${doc.icon} ${doc.name}</div>
+                            </a>
+                        `;
+                    } else {
+                        return `
+                            <a href="${doc.file}" class="doc-card ${doc.featured ? 'featured' : ''}" target="_blank">
+                                <div class="doc-icon">${doc.icon}</div>
+                                <div class="doc-info">
+                                    <span class="doc-category">${doc.category}</span>
+                                    <div class="doc-name">${doc.name}</div>
+                                    <div class="doc-desc">${doc.description}</div>
+                                    <div class="doc-meta">
+                                        <span class="doc-size">${doc.size}</span>
+                                        ${doc.featured ? '<span class="doc-size">⭐ Featured</span>' : ''}
+                                    </div>
+                                </div>
+                            </a>
+                        `;
+                    }
+                }).join('');
+
+                return `
+                    <section class="section ${index === 0 ? 'active' : ''}" id="${key}">
+                        <div class="section-header">
+                            <div class="section-label">${section.label}</div>
+                            <h2 class="section-title">${section.title}</h2>
+                            <p class="section-desc">${section.description}</p>
+                        </div>
+                        <div class="cards-grid ${isCompact ? 'compact' : ''}">
+                            ${cardsHtml}
+                        </div>
+                    </section>
+                `;
+            }).join('');
+            document.getElementById('main-content').innerHTML = sectionsHtml;
+
+            // Setup tab navigation
+            setupTabNavigation();
+        }
+
+        function setupTabNavigation() {
+            document.querySelectorAll('.nav-tab').forEach(tab => {
+                tab.addEventListener('click', () => {
+                    document.querySelectorAll('.nav-tab').forEach(t => t.classList.remove('active'));
+                    tab.classList.add('active');
+                    
+                    document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+                    const sectionId = tab.getAttribute('data-section');
+                    document.getElementById(sectionId).classList.add('active');
+                });
+            });
+        }
+
+        // Load on page ready
+        loadDocs();
+    </script>
+</body>
+</html>

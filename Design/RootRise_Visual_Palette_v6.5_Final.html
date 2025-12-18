@@ -1,0 +1,996 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RootRise by DEVONEERS — Visual Color Palette v6.5</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        /* ═══════════════════════════════════════════════════════════════
+           BASE COLORS (Shared across all themes)
+           ═══════════════════════════════════════════════════════════════ */
+        :root {
+            --gold-primary: #B8904A;
+            --gold-card: #EDE0C8;
+            --gold-card-hover: #E5D5B8;
+            --champagne: #F7E7CE;
+            --cream: #F5F1E8;
+            --cream-warm: #F0EBE0;
+            --pearl: #E8E0D0;
+            --teal: #2A5C5C;
+            --teal-deep: #1E4A4A;
+            --teal-dark-bg: #0D2626;
+            --teal-card-dark: #153838;
+            --burgundy: #722F37;
+            --burgundy-tint: #F5E8EA;
+            --text-dark: #1A1A1A;
+            --text-medium: #4A4A4A;
+            --text-light: #6A6A6A;
+            --text-white: #FFFFFF;
+            --text-cream: #F5F1E8;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 1: LIGHT (Default)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="light"] {
+            --bg-page: var(--cream);
+            --bg-card: var(--gold-card);
+            --bg-card-hover: var(--gold-card-hover);
+            --bg-hero: var(--cream);
+            --border-primary: #C9B896;
+            --border-subtle: #D4CFC4;
+            --accent-primary: var(--teal);
+            --accent-secondary: var(--gold-primary);
+            --text-primary: var(--text-dark);
+            --text-secondary: var(--text-medium);
+            --text-muted: var(--text-light);
+            --text-on-accent: var(--text-white);
+            --title-color: var(--teal);
+            --brand-color: var(--gold-primary);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 2: TEAL (Dark)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="teal"] {
+            --bg-page: var(--teal-dark-bg);
+            --bg-card: var(--teal-card-dark);
+            --bg-card-hover: var(--teal-deep);
+            --bg-hero: var(--teal-dark-bg);
+            --border-primary: var(--teal);
+            --border-subtle: #1E4A4A;
+            --accent-primary: var(--gold-primary);
+            --accent-secondary: var(--champagne);
+            --text-primary: var(--text-cream);
+            --text-secondary: #B8C4C4;
+            --text-muted: #8A9E9E;
+            --text-on-accent: var(--text-dark);
+            --title-color: var(--champagne);
+            --brand-color: var(--gold-primary);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 3: BURGUNDY (Contrast)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="burgundy"] {
+            --bg-page: var(--teal-dark-bg);
+            --bg-card: var(--gold-card);
+            --bg-card-hover: var(--gold-card-hover);
+            --bg-hero: var(--gold-card);
+            --border-primary: var(--gold-primary);
+            --border-subtle: var(--teal);
+            --accent-primary: var(--burgundy);
+            --accent-secondary: var(--gold-primary);
+            --text-primary: var(--champagne);
+            --text-secondary: #C4B8A8;
+            --text-muted: #A89888;
+            --text-on-accent: var(--text-white);
+            --title-color: var(--gold-primary);
+            --brand-color: var(--gold-primary);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME 4: GOLD (Warm)
+           ═══════════════════════════════════════════════════════════════ */
+        [data-theme="gold"] {
+            --bg-page: var(--gold-card);
+            --bg-card: var(--champagne);
+            --bg-card-hover: var(--cream);
+            --bg-hero: var(--gold-card);
+            --border-primary: var(--gold-primary);
+            --border-subtle: #C9B896;
+            --accent-primary: var(--teal);
+            --accent-secondary: var(--teal);
+            --text-primary: var(--text-dark);
+            --text-secondary: var(--text-medium);
+            --text-muted: var(--text-light);
+            --text-on-accent: var(--text-white);
+            --title-color: var(--teal);
+            --brand-color: var(--gold-primary);
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Space Grotesk', sans-serif;
+            background: var(--bg-page);
+            color: var(--text-primary);
+            min-height: 100vh;
+            line-height: 1.6;
+            transition: background 0.4s ease, color 0.4s ease;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME SWITCHER (Same as v6.5)
+           ═══════════════════════════════════════════════════════════════ */
+        .theme-switcher {
+            position: fixed;
+            left: 20px;
+            top: 50%;
+            transform: translateY(-50%);
+            z-index: 1000;
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            background: var(--bg-card);
+            border-radius: 50px;
+            padding: 10px 6px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+            border: 1px solid var(--border-primary);
+            transition: background 0.4s ease;
+        }
+
+        .theme-btn {
+            width: 36px;
+            height: 36px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .theme-btn:hover { transform: scale(1.1); }
+        .theme-btn.active { border-color: var(--text-primary); transform: scale(1.15); }
+
+        .theme-btn-light { background: linear-gradient(135deg, #F5F1E8 50%, #EDE0C8 50%); }
+        .theme-btn-teal { background: linear-gradient(135deg, #0D2626 50%, #2A5C5C 50%); }
+        .theme-btn-burgundy { background: linear-gradient(135deg, #EDE0C8 50%, #722F37 50%); }
+        .theme-btn-gold { background: linear-gradient(135deg, #EDE0C8 50%, #2A5C5C 50%); }
+
+        .theme-btn::after {
+            content: attr(data-label);
+            position: absolute;
+            left: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--bg-card);
+            color: var(--text-secondary);
+            padding: 6px 12px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 600;
+            white-space: nowrap;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s;
+            border: 1px solid var(--border-subtle);
+        }
+
+        .theme-btn:hover::after { opacity: 1; }
+
+        /* ═══════════════════════════════════════════════════════════════
+           HEADER
+           ═══════════════════════════════════════════════════════════════ */
+        .main-header {
+            text-align: center;
+            padding: 60px 20px;
+            background: var(--bg-hero);
+            border-bottom: 4px solid var(--brand-color);
+            transition: background 0.4s ease;
+        }
+
+        .logo {
+            font-family: 'Cinzel', serif;
+            font-size: 48px;
+            font-weight: 700;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+            color: var(--brand-color);
+        }
+
+        .tagline {
+            font-size: 12px;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: var(--accent-primary);
+            margin-bottom: 15px;
+        }
+
+        .main-header h1 {
+            font-size: 28px;
+            font-weight: 400;
+            color: var(--text-secondary);
+            margin-bottom: 10px;
+        }
+
+        .version-badge {
+            display: inline-block;
+            background: var(--accent-primary);
+            color: var(--text-on-accent);
+            padding: 8px 20px;
+            border-radius: 20px;
+            font-size: 11px;
+            font-weight: 600;
+            margin-top: 15px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           CONTENT CONTAINER
+           ═══════════════════════════════════════════════════════════════ */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px 20px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           SECTION STYLES
+           ═══════════════════════════════════════════════════════════════ */
+        .section {
+            margin-bottom: 50px;
+        }
+
+        .section-header {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid var(--accent-primary);
+        }
+
+        .section-number {
+            font-family: 'Cinzel', serif;
+            font-size: 36px;
+            font-weight: 700;
+            color: var(--accent-primary);
+            opacity: 0.5;
+        }
+
+        .section-title {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            color: var(--title-color);
+        }
+
+        .section-subtitle {
+            font-size: 14px;
+            color: var(--text-muted);
+            margin-top: 5px;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           COLOR GRID
+           ═══════════════════════════════════════════════════════════════ */
+        .color-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 16px;
+        }
+
+        .color-card {
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-primary);
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+
+        .color-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+
+        .color-swatch {
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: 600;
+            position: relative;
+        }
+
+        .color-swatch .copy-hint {
+            position: absolute;
+            bottom: 6px;
+            right: 8px;
+            font-size: 10px;
+            opacity: 0;
+            transition: opacity 0.2s;
+        }
+
+        .color-card:hover .copy-hint { opacity: 0.7; }
+
+        .color-info {
+            padding: 14px;
+            background: var(--bg-card);
+            transition: background 0.4s ease;
+        }
+
+        .color-name {
+            font-weight: 600;
+            font-size: 13px;
+            margin-bottom: 3px;
+            color: var(--text-primary);
+        }
+
+        .color-hex {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            color: var(--accent-secondary);
+            margin-bottom: 6px;
+        }
+
+        .color-var {
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 10px;
+            color: var(--text-muted);
+            background: var(--bg-card-hover);
+            padding: 4px 8px;
+            border-radius: 4px;
+            display: inline-block;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           THEME PREVIEW CARDS
+           ═══════════════════════════════════════════════════════════════ */
+        .theme-preview-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+
+        @media (max-width: 900px) {
+            .theme-preview-grid { grid-template-columns: 1fr; }
+        }
+
+        .theme-preview {
+            background: var(--bg-card);
+            border-radius: 16px;
+            overflow: hidden;
+            border: 1px solid var(--border-primary);
+            transition: all 0.4s ease;
+        }
+
+        .theme-preview-header {
+            padding: 16px 20px;
+            background: var(--bg-card-hover);
+            border-bottom: 1px solid var(--border-subtle);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .theme-preview-title {
+            font-family: 'Cinzel', serif;
+            font-size: 16px;
+            color: var(--title-color);
+        }
+
+        .theme-preview-badge {
+            font-size: 10px;
+            padding: 4px 10px;
+            border-radius: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .theme-preview-content {
+            padding: 20px;
+        }
+
+        .preview-row {
+            display: flex;
+            gap: 8px;
+            margin-bottom: 12px;
+            flex-wrap: wrap;
+        }
+
+        .preview-swatch {
+            width: 40px;
+            height: 40px;
+            border-radius: 8px;
+            border: 2px solid var(--border-subtle);
+            position: relative;
+        }
+
+        .preview-swatch::after {
+            content: attr(data-label);
+            position: absolute;
+            bottom: -18px;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 8px;
+            color: var(--text-muted);
+            white-space: nowrap;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           USAGE TABLE
+           ═══════════════════════════════════════════════════════════════ */
+        .usage-table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 13px;
+            background: var(--bg-card);
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid var(--border-primary);
+        }
+
+        .usage-table th {
+            background: var(--accent-primary);
+            color: var(--text-on-accent);
+            padding: 14px 16px;
+            text-align: left;
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .usage-table td {
+            padding: 12px 16px;
+            border-bottom: 1px solid var(--border-subtle);
+            vertical-align: middle;
+        }
+
+        .usage-table tr:last-child td { border-bottom: none; }
+
+        .usage-table tr:hover { background: var(--bg-card-hover); }
+
+        .color-dot {
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            display: inline-block;
+            margin-right: 8px;
+            vertical-align: middle;
+            border: 2px solid var(--border-subtle);
+        }
+
+        .theme-tag {
+            display: inline-block;
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .theme-tag.light { background: #F5F1E8; color: #2A5C5C; }
+        .theme-tag.teal { background: #0D2626; color: #F7E7CE; }
+        .theme-tag.burgundy { background: #722F37; color: #FFFFFF; }
+        .theme-tag.gold { background: #EDE0C8; color: #2A5C5C; }
+
+        /* ═══════════════════════════════════════════════════════════════
+           CSS CODE BLOCK
+           ═══════════════════════════════════════════════════════════════ */
+        .code-block {
+            background: #1e1e1e;
+            color: #d4d4d4;
+            padding: 20px;
+            border-radius: 12px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 12px;
+            line-height: 1.6;
+            overflow-x: auto;
+            margin-top: 20px;
+        }
+
+        .code-block .comment { color: #6A9955; }
+        .code-block .property { color: #9CDCFE; }
+        .code-block .value { color: #CE9178; }
+        .code-block .selector { color: #D7BA7D; }
+
+        /* ═══════════════════════════════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════════════════════════════ */
+        .footer {
+            text-align: center;
+            padding: 40px 20px;
+            background: var(--bg-hero);
+            border-top: 4px solid var(--brand-color);
+            transition: background 0.4s ease;
+        }
+
+        .footer-logo {
+            font-family: 'Cinzel', serif;
+            font-size: 24px;
+            color: var(--brand-color);
+            margin-bottom: 10px;
+        }
+
+        .footer p {
+            color: var(--text-muted);
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        .balance-bar {
+            display: flex;
+            height: 10px;
+            border-radius: 5px;
+            overflow: hidden;
+            max-width: 300px;
+            margin: 0 auto;
+        }
+
+        .balance-bar .beige { flex: 30; background: var(--pearl); }
+        .balance-bar .gold { flex: 30; background: var(--gold-primary); }
+        .balance-bar .teal { flex: 30; background: var(--teal); }
+        .balance-bar .burgundy { flex: 10; background: var(--burgundy); }
+
+        /* Copy Toast */
+        .copy-toast {
+            position: fixed;
+            bottom: 30px;
+            left: 50%;
+            transform: translateX(-50%) translateY(100px);
+            background: var(--accent-primary);
+            color: var(--text-on-accent);
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-weight: 600;
+            font-size: 14px;
+            opacity: 0;
+            transition: all 0.3s;
+            z-index: 1000;
+        }
+
+        .copy-toast.show {
+            transform: translateX(-50%) translateY(0);
+            opacity: 1;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .logo { font-size: 36px; }
+            .main-header h1 { font-size: 22px; }
+            .color-grid { grid-template-columns: repeat(2, 1fr); }
+            .theme-switcher { left: 10px; padding: 8px 4px; }
+            .theme-btn { width: 30px; height: 30px; }
+        }
+    </style>
+</head>
+<body>
+    <!-- Theme Switcher -->
+    <div class="theme-switcher">
+        <div class="theme-btn theme-btn-light active" data-label="Light" onclick="setTheme('light', this)"></div>
+        <div class="theme-btn theme-btn-teal" data-label="Teal Dark" onclick="setTheme('teal', this)"></div>
+        <div class="theme-btn theme-btn-burgundy" data-label="Burgundy" onclick="setTheme('burgundy', this)"></div>
+        <div class="theme-btn theme-btn-gold" data-label="Gold Warm" onclick="setTheme('gold', this)"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="main-header">
+        <div class="logo">RootRise</div>
+        <div class="tagline">AI-&I Powered SME Transformation</div>
+        <h1>Visual Color Palette — v6.5 Final</h1>
+        <p style="color: var(--text-muted); font-size: 14px; max-width: 600px; margin: 0 auto;">
+            Use the theme switcher on the left to preview all 4 themes. Click any color to copy.
+        </p>
+        <div class="version-badge">Designer: Ruba • December 2025</div>
+    </header>
+
+    <div class="container">
+        <!-- ═══════════════════════════════════════════════════════════════
+             SECTION 1: BASE COLORS (Shared)
+             ═══════════════════════════════════════════════════════════════ -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">01</span>
+                <div>
+                    <h2 class="section-title">Base Colors</h2>
+                    <p class="section-subtitle">Shared across all themes — the foundation palette</p>
+                </div>
+            </div>
+
+            <div class="color-grid">
+                <div class="color-card" onclick="copyColor('#B8904A')">
+                    <div class="color-swatch" style="background: #B8904A; color: white;">Aa<span class="copy-hint">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Gold Primary</div>
+                        <div class="color-hex">#B8904A</div>
+                        <div class="color-var">--gold-primary</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#EDE0C8')">
+                    <div class="color-swatch" style="background: #EDE0C8; color: #1A1A1A;">Aa<span class="copy-hint" style="color: #6A6A6A;">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Gold Card</div>
+                        <div class="color-hex">#EDE0C8</div>
+                        <div class="color-var">--gold-card</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#F7E7CE')">
+                    <div class="color-swatch" style="background: #F7E7CE; color: #1A1A1A;">Aa<span class="copy-hint" style="color: #6A6A6A;">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Champagne</div>
+                        <div class="color-hex">#F7E7CE</div>
+                        <div class="color-var">--champagne</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#F5F1E8')">
+                    <div class="color-swatch" style="background: #F5F1E8; color: #1A1A1A; border: 1px solid #D4CFC4;">Aa<span class="copy-hint" style="color: #6A6A6A;">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Cream</div>
+                        <div class="color-hex">#F5F1E8</div>
+                        <div class="color-var">--cream</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#E8E0D0')">
+                    <div class="color-swatch" style="background: #E8E0D0; color: #1A1A1A;">Aa<span class="copy-hint" style="color: #6A6A6A;">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Pearl</div>
+                        <div class="color-hex">#E8E0D0</div>
+                        <div class="color-var">--pearl</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#2A5C5C')">
+                    <div class="color-swatch" style="background: #2A5C5C; color: white;">Aa<span class="copy-hint">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Teal</div>
+                        <div class="color-hex">#2A5C5C</div>
+                        <div class="color-var">--teal</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#1E4A4A')">
+                    <div class="color-swatch" style="background: #1E4A4A; color: white;">Aa<span class="copy-hint">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Teal Deep</div>
+                        <div class="color-hex">#1E4A4A</div>
+                        <div class="color-var">--teal-deep</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#0D2626')">
+                    <div class="color-swatch" style="background: #0D2626; color: white;">Aa<span class="copy-hint">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Teal Dark BG</div>
+                        <div class="color-hex">#0D2626</div>
+                        <div class="color-var">--teal-dark-bg</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#153838')">
+                    <div class="color-swatch" style="background: #153838; color: white;">Aa<span class="copy-hint">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Teal Card Dark</div>
+                        <div class="color-hex">#153838</div>
+                        <div class="color-var">--teal-card-dark</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#722F37')">
+                    <div class="color-swatch" style="background: #722F37; color: white;">Aa<span class="copy-hint">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Burgundy</div>
+                        <div class="color-hex">#722F37</div>
+                        <div class="color-var">--burgundy</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#F5E8EA')">
+                    <div class="color-swatch" style="background: #F5E8EA; color: #722F37;">Aa<span class="copy-hint" style="color: #722F37;">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Burgundy Tint</div>
+                        <div class="color-hex">#F5E8EA</div>
+                        <div class="color-var">--burgundy-tint</div>
+                    </div>
+                </div>
+
+                <div class="color-card" onclick="copyColor('#C9B896')">
+                    <div class="color-swatch" style="background: #C9B896; color: #1A1A1A;">Aa<span class="copy-hint" style="color: #4A4A4A;">click</span></div>
+                    <div class="color-info">
+                        <div class="color-name">Border Gold</div>
+                        <div class="color-hex">#C9B896</div>
+                        <div class="color-var">--border-primary</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             SECTION 2: THEME PREVIEWS
+             ═══════════════════════════════════════════════════════════════ -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">02</span>
+                <div>
+                    <h2 class="section-title">The 4 Themes</h2>
+                    <p class="section-subtitle">Each theme remaps semantic variables for different moods</p>
+                </div>
+            </div>
+
+            <div class="theme-preview-grid">
+                <!-- LIGHT THEME -->
+                <div class="theme-preview" style="background: #F5F1E8;">
+                    <div class="theme-preview-header" style="background: #EDE0C8; border-color: #D4CFC4;">
+                        <span class="theme-preview-title" style="color: #2A5C5C;">Light Theme</span>
+                        <span class="theme-tag light">Default</span>
+                    </div>
+                    <div class="theme-preview-content">
+                        <div class="preview-row">
+                            <div class="preview-swatch" style="background: #F5F1E8;" data-label="Page"></div>
+                            <div class="preview-swatch" style="background: #EDE0C8;" data-label="Card"></div>
+                            <div class="preview-swatch" style="background: #2A5C5C;" data-label="Accent"></div>
+                            <div class="preview-swatch" style="background: #B8904A;" data-label="Brand"></div>
+                            <div class="preview-swatch" style="background: #1A1A1A;" data-label="Text"></div>
+                        </div>
+                        <p style="font-size: 12px; color: #4A4A4A; margin-top: 20px;">
+                            <strong>Best for:</strong> Questionnaires, forms, reports, light reading content
+                        </p>
+                    </div>
+                </div>
+
+                <!-- TEAL THEME -->
+                <div class="theme-preview" style="background: #0D2626;">
+                    <div class="theme-preview-header" style="background: #153838; border-color: #1E4A4A;">
+                        <span class="theme-preview-title" style="color: #F7E7CE;">Teal Theme</span>
+                        <span class="theme-tag teal">Dark</span>
+                    </div>
+                    <div class="theme-preview-content">
+                        <div class="preview-row">
+                            <div class="preview-swatch" style="background: #0D2626; border-color: #2A5C5C;" data-label="Page"></div>
+                            <div class="preview-swatch" style="background: #153838; border-color: #2A5C5C;" data-label="Card"></div>
+                            <div class="preview-swatch" style="background: #B8904A;" data-label="Accent"></div>
+                            <div class="preview-swatch" style="background: #B8904A;" data-label="Brand"></div>
+                            <div class="preview-swatch" style="background: #F5F1E8;" data-label="Text"></div>
+                        </div>
+                        <p style="font-size: 12px; color: #B8C4C4; margin-top: 20px;">
+                            <strong style="color: #F7E7CE;">Best for:</strong> Landing pages, hero sections, immersive brand moments
+                        </p>
+                    </div>
+                </div>
+
+                <!-- BURGUNDY THEME -->
+                <div class="theme-preview" style="background: #0D2626;">
+                    <div class="theme-preview-header" style="background: #EDE0C8; border-color: #B8904A;">
+                        <span class="theme-preview-title" style="color: #B8904A;">Burgundy Theme</span>
+                        <span class="theme-tag burgundy">Contrast</span>
+                    </div>
+                    <div class="theme-preview-content">
+                        <div class="preview-row">
+                            <div class="preview-swatch" style="background: #0D2626; border-color: #2A5C5C;" data-label="Page"></div>
+                            <div class="preview-swatch" style="background: #EDE0C8;" data-label="Card"></div>
+                            <div class="preview-swatch" style="background: #722F37;" data-label="Accent"></div>
+                            <div class="preview-swatch" style="background: #B8904A;" data-label="Brand"></div>
+                            <div class="preview-swatch" style="background: #F7E7CE;" data-label="Text"></div>
+                        </div>
+                        <p style="font-size: 12px; color: #C4B8A8; margin-top: 20px;">
+                            <strong style="color: #F7E7CE;">Best for:</strong> Premium accents, special sections, high-contrast UI
+                        </p>
+                    </div>
+                </div>
+
+                <!-- GOLD THEME -->
+                <div class="theme-preview" style="background: #EDE0C8;">
+                    <div class="theme-preview-header" style="background: #F7E7CE; border-color: #C9B896;">
+                        <span class="theme-preview-title" style="color: #2A5C5C;">Gold Theme</span>
+                        <span class="theme-tag gold">Warm</span>
+                    </div>
+                    <div class="theme-preview-content">
+                        <div class="preview-row">
+                            <div class="preview-swatch" style="background: #EDE0C8;" data-label="Page"></div>
+                            <div class="preview-swatch" style="background: #F7E7CE;" data-label="Card"></div>
+                            <div class="preview-swatch" style="background: #2A5C5C;" data-label="Accent"></div>
+                            <div class="preview-swatch" style="background: #B8904A;" data-label="Brand"></div>
+                            <div class="preview-swatch" style="background: #1A1A1A;" data-label="Text"></div>
+                        </div>
+                        <p style="font-size: 12px; color: #4A4A4A; margin-top: 20px;">
+                            <strong>Best for:</strong> Warm dashboards, balanced layouts, premium feel
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             SECTION 3: SEMANTIC VARIABLE MAPPING
+             ═══════════════════════════════════════════════════════════════ -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">03</span>
+                <div>
+                    <h2 class="section-title">Semantic Variable Mapping</h2>
+                    <p class="section-subtitle">How each theme maps semantic variables to base colors</p>
+                </div>
+            </div>
+
+            <table class="usage-table">
+                <thead>
+                    <tr>
+                        <th>Variable</th>
+                        <th>Light</th>
+                        <th>Teal</th>
+                        <th>Burgundy</th>
+                        <th>Gold</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><code>--bg-page</code></td>
+                        <td><span class="color-dot" style="background: #F5F1E8;"></span>#F5F1E8</td>
+                        <td><span class="color-dot" style="background: #0D2626;"></span>#0D2626</td>
+                        <td><span class="color-dot" style="background: #0D2626;"></span>#0D2626</td>
+                        <td><span class="color-dot" style="background: #EDE0C8;"></span>#EDE0C8</td>
+                    </tr>
+                    <tr>
+                        <td><code>--bg-card</code></td>
+                        <td><span class="color-dot" style="background: #EDE0C8;"></span>#EDE0C8</td>
+                        <td><span class="color-dot" style="background: #153838;"></span>#153838</td>
+                        <td><span class="color-dot" style="background: #EDE0C8;"></span>#EDE0C8</td>
+                        <td><span class="color-dot" style="background: #F7E7CE;"></span>#F7E7CE</td>
+                    </tr>
+                    <tr>
+                        <td><code>--accent-primary</code></td>
+                        <td><span class="color-dot" style="background: #2A5C5C;"></span>#2A5C5C</td>
+                        <td><span class="color-dot" style="background: #B8904A;"></span>#B8904A</td>
+                        <td><span class="color-dot" style="background: #722F37;"></span>#722F37</td>
+                        <td><span class="color-dot" style="background: #2A5C5C;"></span>#2A5C5C</td>
+                    </tr>
+                    <tr>
+                        <td><code>--accent-secondary</code></td>
+                        <td><span class="color-dot" style="background: #B8904A;"></span>#B8904A</td>
+                        <td><span class="color-dot" style="background: #F7E7CE;"></span>#F7E7CE</td>
+                        <td><span class="color-dot" style="background: #B8904A;"></span>#B8904A</td>
+                        <td><span class="color-dot" style="background: #2A5C5C;"></span>#2A5C5C</td>
+                    </tr>
+                    <tr>
+                        <td><code>--title-color</code></td>
+                        <td><span class="color-dot" style="background: #2A5C5C;"></span>#2A5C5C</td>
+                        <td><span class="color-dot" style="background: #F7E7CE;"></span>#F7E7CE</td>
+                        <td><span class="color-dot" style="background: #B8904A;"></span>#B8904A</td>
+                        <td><span class="color-dot" style="background: #2A5C5C;"></span>#2A5C5C</td>
+                    </tr>
+                    <tr>
+                        <td><code>--text-primary</code></td>
+                        <td><span class="color-dot" style="background: #1A1A1A;"></span>#1A1A1A</td>
+                        <td><span class="color-dot" style="background: #F5F1E8;"></span>#F5F1E8</td>
+                        <td><span class="color-dot" style="background: #F7E7CE;"></span>#F7E7CE</td>
+                        <td><span class="color-dot" style="background: #1A1A1A;"></span>#1A1A1A</td>
+                    </tr>
+                    <tr>
+                        <td><code>--text-on-accent</code></td>
+                        <td><span class="color-dot" style="background: #FFFFFF;"></span>#FFFFFF</td>
+                        <td><span class="color-dot" style="background: #1A1A1A;"></span>#1A1A1A</td>
+                        <td><span class="color-dot" style="background: #FFFFFF;"></span>#FFFFFF</td>
+                        <td><span class="color-dot" style="background: #FFFFFF;"></span>#FFFFFF</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- ═══════════════════════════════════════════════════════════════
+             SECTION 4: CSS VARIABLES
+             ═══════════════════════════════════════════════════════════════ -->
+        <section class="section">
+            <div class="section-header">
+                <span class="section-number">04</span>
+                <div>
+                    <h2 class="section-title">CSS Variables</h2>
+                    <p class="section-subtitle">Copy-paste ready code for implementation</p>
+                </div>
+            </div>
+
+            <div class="code-block">
+<span class="comment">/* Base Colors (Shared) */</span>
+<span class="selector">:root</span> {
+  <span class="property">--gold-primary:</span> <span class="value">#B8904A</span>;
+  <span class="property">--gold-card:</span> <span class="value">#EDE0C8</span>;
+  <span class="property">--gold-card-hover:</span> <span class="value">#E5D5B8</span>;
+  <span class="property">--champagne:</span> <span class="value">#F7E7CE</span>;
+  <span class="property">--cream:</span> <span class="value">#F5F1E8</span>;
+  <span class="property">--pearl:</span> <span class="value">#E8E0D0</span>;
+  <span class="property">--teal:</span> <span class="value">#2A5C5C</span>;
+  <span class="property">--teal-deep:</span> <span class="value">#1E4A4A</span>;
+  <span class="property">--teal-dark-bg:</span> <span class="value">#0D2626</span>;
+  <span class="property">--teal-card-dark:</span> <span class="value">#153838</span>;
+  <span class="property">--burgundy:</span> <span class="value">#722F37</span>;
+  <span class="property">--burgundy-tint:</span> <span class="value">#F5E8EA</span>;
+}
+
+<span class="comment">/* Light Theme (Default) */</span>
+<span class="selector">[data-theme="light"]</span> {
+  <span class="property">--bg-page:</span> <span class="value">var(--cream)</span>;
+  <span class="property">--bg-card:</span> <span class="value">var(--gold-card)</span>;
+  <span class="property">--accent-primary:</span> <span class="value">var(--teal)</span>;
+  <span class="property">--accent-secondary:</span> <span class="value">var(--gold-primary)</span>;
+  <span class="property">--title-color:</span> <span class="value">var(--teal)</span>;
+  <span class="property">--brand-color:</span> <span class="value">var(--gold-primary)</span>;
+}
+
+<span class="comment">/* Teal Theme (Dark) */</span>
+<span class="selector">[data-theme="teal"]</span> {
+  <span class="property">--bg-page:</span> <span class="value">var(--teal-dark-bg)</span>;
+  <span class="property">--bg-card:</span> <span class="value">var(--teal-card-dark)</span>;
+  <span class="property">--accent-primary:</span> <span class="value">var(--gold-primary)</span>;
+  <span class="property">--title-color:</span> <span class="value">var(--champagne)</span>;
+}
+
+<span class="comment">/* Burgundy Theme (Contrast) */</span>
+<span class="selector">[data-theme="burgundy"]</span> {
+  <span class="property">--bg-page:</span> <span class="value">var(--teal-dark-bg)</span>;
+  <span class="property">--bg-card:</span> <span class="value">var(--gold-card)</span>;
+  <span class="property">--accent-primary:</span> <span class="value">var(--burgundy)</span>;
+  <span class="property">--title-color:</span> <span class="value">var(--gold-primary)</span>;
+}
+
+<span class="comment">/* Gold Theme (Warm) */</span>
+<span class="selector">[data-theme="gold"]</span> {
+  <span class="property">--bg-page:</span> <span class="value">var(--gold-card)</span>;
+  <span class="property">--bg-card:</span> <span class="value">var(--champagne)</span>;
+  <span class="property">--accent-primary:</span> <span class="value">var(--teal)</span>;
+  <span class="property">--title-color:</span> <span class="value">var(--teal)</span>;
+}
+            </div>
+        </section>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-logo">RootRise</div>
+        <p>Color System v6.5 Final • Based on DEVONEERS Brand Identity</p>
+        <div class="balance-bar">
+            <div class="beige"></div>
+            <div class="gold"></div>
+            <div class="teal"></div>
+            <div class="burgundy"></div>
+        </div>
+    </footer>
+
+    <!-- Copy Toast -->
+    <div class="copy-toast" id="copyToast">Copied!</div>
+
+    <script>
+        function setTheme(theme, btn) {
+            document.documentElement.setAttribute('data-theme', theme);
+            var btns = document.querySelectorAll('.theme-btn');
+            for (var i = 0; i < btns.length; i++) { btns[i].classList.remove('active'); }
+            btn.classList.add('active');
+            localStorage.setItem('rootrise-palette-theme', theme);
+        }
+
+        // Load saved theme
+        var savedTheme = localStorage.getItem('rootrise-palette-theme') || 'light';
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        var activeBtn = document.querySelector('.theme-btn-' + savedTheme);
+        if (activeBtn) {
+            var btns = document.querySelectorAll('.theme-btn');
+            for (var i = 0; i < btns.length; i++) { btns[i].classList.remove('active'); }
+            activeBtn.classList.add('active');
+        }
+
+        function copyColor(hex) {
+            navigator.clipboard.writeText(hex).then(function() {
+                var toast = document.getElementById('copyToast');
+                toast.textContent = hex + ' copied!';
+                toast.classList.add('show');
+                setTimeout(function() {
+                    toast.classList.remove('show');
+                }, 2000);
+            });
+        }
+    </script>
+</body>
+</html>

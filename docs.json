@@ -1,0 +1,633 @@
+{
+  "meta": {
+    "version": "1.0.0",
+    "lastUpdated": "2025-12-18",
+    "maintainer": "Tee (CTO)",
+    "description": "RootRise Blueprint & ArchExplained Documentation Hub"
+  },
+  "sections": {
+    "architecture": {
+      "label": "Infrastructure",
+      "title": "Technical Architecture",
+      "description": "Infrastructure blueprints, questionnaire schemas, report templates, and system design documents.",
+      "icon": "🏗️",
+      "color": "gold",
+      "docs": [
+        {
+          "file": "architecture/RootRise_Infrastructure_Blueprint_v1.md",
+          "name": "Infrastructure Blueprint v1",
+          "description": "Complete technical architecture, LangGraph orchestration, database schemas, API specifications.",
+          "category": "Core Infrastructure",
+          "icon": "🏛️",
+          "size": "203 KB",
+          "featured": true,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "architecture/RootRise_Questionnaire_Schema_v1.md",
+          "name": "Questionnaire Schema v1",
+          "description": "Diagnostic question structure, conditional logic, and validation rules.",
+          "category": "Schema",
+          "icon": "📋",
+          "size": "124 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "architecture/RootRise_Report_Templates_v1.md",
+          "name": "Report Templates v1",
+          "description": "Output templates for diagnostic reports and SME assessments.",
+          "category": "Templates",
+          "icon": "📄",
+          "size": "29 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "architecture/RootRise_Infrastructure_QuickRef.md",
+          "name": "Infrastructure Quick Ref",
+          "description": "Condensed technical overview for developers.",
+          "category": "Quick Reference",
+          "icon": "⚡",
+          "size": "6 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "architecture/RootRise_Project_Brief.md",
+          "name": "Project Brief",
+          "description": "Complete project context, requirements, and strategic direction.",
+          "category": "Overview",
+          "icon": "📖",
+          "size": "17 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "architecture/RootRise_Technical_Handoff_v6.docx",
+          "name": "Technical Handoff v6",
+          "description": "Complete technical handoff documentation for implementation team.",
+          "category": "Handoff",
+          "icon": "🤝",
+          "size": "~50 KB",
+          "featured": false,
+          "dateAdded": "2025-12-17"
+        }
+      ]
+    },
+    "agents": {
+      "label": "The Pantheon",
+      "title": "AI Agent System",
+      "description": "Multi-agent prompts and configurations — named after business pioneers.",
+      "icon": "🤖",
+      "color": "gold",
+      "docs": [
+        {
+          "file": "agents/RootRise_Core_Agent_Prompts.md",
+          "name": "Core Agent Prompts",
+          "description": "The Drucker (Supervisor), The Marvin (Diagnostic), The Graham (Finance).",
+          "category": "Core Agents",
+          "icon": "🎯",
+          "size": "59 KB",
+          "featured": true,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "agents/RootRise_AddOn_Agent_Prompts.md",
+          "name": "Add-On Agent Prompts",
+          "description": "Export, Digital Transformation, HR, Supply Chain, Market Analysis specialists.",
+          "category": "Add-On Agents",
+          "icon": "➕",
+          "size": "104 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "agents/RootRise_Utility_Agent_Prompts.md",
+          "name": "Utility Agent Prompts",
+          "description": "Orchestration support, data processing, and auxiliary functions.",
+          "category": "Utility Agents",
+          "icon": "🔧",
+          "size": "67 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        }
+      ]
+    },
+    "lenses": {
+      "label": "The &Eye",
+      "title": "Transformation Lenses",
+      "description": "15 transformation lenses that reprioritize diagnostics toward specific business goals.",
+      "icon": "👁️",
+      "color": "burgundy",
+      "docs": [
+        {
+          "file": "Lenses/RootRise_Eye_Lens_Framework.md",
+          "name": "The &Eye Lens Framework",
+          "description": "Complete framework for 15 transformation lenses: Quick Wins, Growth, Export Readiness, and more.",
+          "category": "Framework",
+          "icon": "🔮",
+          "size": "72 KB",
+          "featured": true,
+          "dateAdded": "2025-12-17"
+        }
+      ]
+    },
+    "sectors": {
+      "label": "My Sector",
+      "title": "Sector Intelligence Packs",
+      "description": "27+ industry-specific knowledge packs with MENA regional context.",
+      "icon": "🌍",
+      "color": "teal",
+      "docs": [
+        {
+          "file": "sectors/RootRise_Sector_Knowledge_Framework.md",
+          "name": "Sector Knowledge Framework",
+          "description": "11-dimension structure for all sector intelligence packs.",
+          "category": "Framework",
+          "icon": "📐",
+          "size": "35 KB",
+          "featured": true,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Knowledge_Complete.md",
+          "name": "Complete Sector Knowledge",
+          "description": "Consolidated sector intelligence reference.",
+          "category": "Knowledge Base",
+          "icon": "📖",
+          "size": "94 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Agriculture_Complete.md",
+          "name": "Agriculture & Agribusiness",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🌾",
+          "size": "156 KB",
+          "featured": false,
+          "dateAdded": "2025-12-15"
+        },
+        {
+          "file": "sectors/RootRise_Sector_ArtsHandicrafts_Complete.md",
+          "name": "Arts & Handicrafts",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Creative",
+          "icon": "🎨",
+          "size": "13 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Automotive_Complete.md",
+          "name": "Automotive",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🚗",
+          "size": "74 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Chemicals_Complete.md",
+          "name": "Chemicals",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🧪",
+          "size": "92 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Construction_Complete.md",
+          "name": "Construction",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🏗️",
+          "size": "92 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Cosmetics_Complete.md",
+          "name": "Cosmetics",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Consumer",
+          "icon": "💄",
+          "size": "13 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_DesignCreative_Complete.md",
+          "name": "Design & Creative",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Creative",
+          "icon": "✏️",
+          "size": "13 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Education_Complete.md",
+          "name": "Education",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "📚",
+          "size": "80 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Electronics_Complete.md",
+          "name": "Electronics",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🔌",
+          "size": "12 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Energy_Complete.md",
+          "name": "Energy",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "⚡",
+          "size": "5.5 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Environmental_Complete.md",
+          "name": "Environmental",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🌿",
+          "size": "5.5 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_FillingBottling_Complete.md",
+          "name": "Filling & Bottling",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🍾",
+          "size": "13 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Financial_Complete.md",
+          "name": "Financial Services",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "💰",
+          "size": "80 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Furniture_Complete.md",
+          "name": "Furniture",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🪑",
+          "size": "13 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Healthcare_Complete.md",
+          "name": "Healthcare",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🏥",
+          "size": "93 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Hospitality_Complete.md",
+          "name": "Hospitality",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🏨",
+          "size": "72 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Logistics_Complete.md",
+          "name": "Logistics & Transportation",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🚚",
+          "size": "51 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Maintenance_Complete.md",
+          "name": "Maintenance",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🔧",
+          "size": "13 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Media_Complete.md",
+          "name": "Media",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Creative",
+          "icon": "📺",
+          "size": "12 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Metal_Complete.md",
+          "name": "Metal & Fabrication",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "⚙️",
+          "size": "94 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Paper_Complete.md",
+          "name": "Paper & Printing",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "📄",
+          "size": "12 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Personal_Complete.md",
+          "name": "Personal Services",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "💇",
+          "size": "6 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Pharma_Complete.md",
+          "name": "Pharmaceuticals",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "💊",
+          "size": "95 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Plastics_Complete.md",
+          "name": "Plastics",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🧴",
+          "size": "12 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Professional_Complete.md",
+          "name": "Professional Services",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "👔",
+          "size": "81 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_RealEstate_Complete.md",
+          "name": "Real Estate",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🏠",
+          "size": "77 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Retail_Complete.md",
+          "name": "Retail",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🛒",
+          "size": "70 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Security_Complete.md",
+          "name": "Security",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "🔒",
+          "size": "5.5 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Tech_Complete.md",
+          "name": "Technology",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "💻",
+          "size": "82 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Telecom_Complete.md",
+          "name": "Telecommunications",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Services",
+          "icon": "📡",
+          "size": "7 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        },
+        {
+          "file": "sectors/RootRise_Sector_Textiles_Complete.md",
+          "name": "Textiles",
+          "description": "Complete sector pack with MENA context.",
+          "category": "Industrial",
+          "icon": "🧵",
+          "size": "80 KB",
+          "featured": false,
+          "dateAdded": "2025-12-16"
+        }
+      ]
+    },
+    "design": {
+      "label": "Design System",
+      "title": "Visual Design",
+      "description": "Color system, visual palette, and design references for RootRise v6.5.",
+      "icon": "🎨",
+      "color": "burgundy",
+      "docs": [
+        {
+          "file": "Design/RootRise_Color_System_v6.5_Reference.md",
+          "name": "Color System v6.5 Reference",
+          "description": "Complete color system documentation with all 4 themes.",
+          "category": "Colors",
+          "icon": "🎨",
+          "size": "~10 KB",
+          "featured": true,
+          "dateAdded": "2025-12-17"
+        },
+        {
+          "file": "Design/RootRise_Visual_Palette_v6.5_Final.html",
+          "name": "Visual Palette v6.5",
+          "description": "Interactive visual reference with theme switcher.",
+          "category": "Visual",
+          "icon": "🖼️",
+          "size": "~30 KB",
+          "featured": false,
+          "dateAdded": "2025-12-17"
+        }
+      ]
+    },
+    "presentations": {
+      "label": "Presentations",
+      "title": "Pitch Decks & Presentations",
+      "description": "Investor decks, partner presentations, technical guides, and strategic materials.",
+      "icon": "📊",
+      "color": "gold",
+      "docs": [
+        {
+          "file": "Presentations/RootRise_by_DEVONEERS_v2.pdf",
+          "name": "RootRise by DEVONEERS v2",
+          "description": "Main investor presentation deck - comprehensive platform overview.",
+          "category": "Investor",
+          "icon": "📈",
+          "size": "29 MB",
+          "featured": true,
+          "dateAdded": "2025-12-10"
+        },
+        {
+          "file": "Presentations/DEVONEERS_-_RootRise_-_Dec_2025.pdf",
+          "name": "DEVONEERS RootRise Dec 2025",
+          "description": "Latest December 2025 presentation deck.",
+          "category": "Investor",
+          "icon": "📊",
+          "size": "14 MB",
+          "featured": true,
+          "dateAdded": "2025-12-14"
+        },
+        {
+          "file": "Presentations/DEVONEERS_RootRise_EBRD_Star_Venture.pdf",
+          "name": "EBRD Star Venture Presentation",
+          "description": "EBRD Star Venture Programme presentation deck.",
+          "category": "EBRD",
+          "icon": "🌟",
+          "size": "6.6 MB",
+          "featured": true,
+          "dateAdded": "2025-12-17"
+        },
+        {
+          "file": "Presentations/RootRise_Orchestrated_Breaking_the_Mold.pdf",
+          "name": "RootRise Orchestrated: Breaking the Mold",
+          "description": "Multi-agent orchestration and architecture presentation.",
+          "category": "Technical",
+          "icon": "🔄",
+          "size": "33 MB",
+          "featured": false,
+          "dateAdded": "2025-12-04"
+        },
+        {
+          "file": "Presentations/RootRise_Architecture_Upgrade.pdf",
+          "name": "Architecture Upgrade",
+          "description": "Technical architecture upgrade presentation.",
+          "category": "Technical",
+          "icon": "🏗️",
+          "size": "1.8 MB",
+          "featured": false,
+          "dateAdded": "2025-11-29"
+        },
+        {
+          "file": "Presentations/AI_Epistemology_Foundations_Limits.pdf",
+          "name": "AI Epistemology: Foundations & Limits",
+          "description": "Deep dive into AI knowledge foundations and limitations.",
+          "category": "Research",
+          "icon": "🧠",
+          "size": "129 KB",
+          "featured": false,
+          "dateAdded": "2025-12-04"
+        },
+        {
+          "file": "Presentations/The_Chinese_Room_Modern_AI.pdf",
+          "name": "The Chinese Room & Modern AI",
+          "description": "Philosophical exploration of AI understanding and consciousness.",
+          "category": "Research",
+          "icon": "🏛️",
+          "size": "143 KB",
+          "featured": false,
+          "dateAdded": "2025-12-14"
+        },
+        {
+          "file": "Presentations/API_Terminology_Guide.pdf",
+          "name": "API Terminology Guide",
+          "description": "Technical reference for API terminology and concepts.",
+          "category": "Guide",
+          "icon": "📖",
+          "size": "6 KB",
+          "featured": false,
+          "dateAdded": "2025-11-28"
+        },
+        {
+          "file": "Presentations/MultiAgent_Safety_Guide.pdf",
+          "name": "Multi-Agent Safety Guide",
+          "description": "Safety considerations for multi-agent AI systems.",
+          "category": "Guide",
+          "icon": "🛡️",
+          "size": "6 KB",
+          "featured": false,
+          "dateAdded": "2025-11-28"
+        },
+        {
+          "file": "Presentations/Security_Posture_Guide.pdf",
+          "name": "Security Posture Guide",
+          "description": "Security best practices and posture guidelines.",
+          "category": "Guide",
+          "icon": "🔐",
+          "size": "7 KB",
+          "featured": false,
+          "dateAdded": "2025-11-28"
+        }
+      ]
+    },
+    "resources": {
+      "label": "Resources",
+      "title": "Additional Materials",
+      "description": "Strategic guides, summaries, and supplementary documentation.",
+      "icon": "📚",
+      "color": "gold",
+      "docs": [
+        {
+          "file": "resources/RootRise_v6_Master_Summary.docx",
+          "name": "v6 Master Summary",
+          "description": "Complete project summary document.",
+          "category": "Summary",
+          "icon": "📋",
+          "size": "18 KB",
+          "featured": true,
+          "dateAdded": "2025-12-17"
+        }
+      ]
+    }
+  }
+}
