@@ -508,6 +508,16 @@
       "icon": "📊",
       "color": "gold",
       "docs": [
+       {
+  "file": "presentations/DEVONEERS - RootRise AI-Powered - Dec 2025 - PDF.pdf",
+  "name": "18th Dec Update by Doaa",
+  "description": "slides for development organizations. We have reshuffled the sequence of the slides to be: RootRise technical concept, RootRise Platform, The team, Commercialization and Growth pathway.",
+  "category": "Partner",
+  "icon": "🤝",
+  "size": "13.7 MB",
+  "featured": false,
+  "dateAdded": "2025-12-18"
+}
         {
           "file": "Presentations/RootRise_by_DEVONEERS_v2_compressed.pdf",
           "name": "RootRise by DEVONEERS v2",
