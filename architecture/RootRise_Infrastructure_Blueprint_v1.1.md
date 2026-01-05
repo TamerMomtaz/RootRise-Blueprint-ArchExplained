@@ -2,7 +2,7 @@
 
 **Document Version:** 1.1  
 **Date:** January 4, 2026  
-**Author:** Tee (CTO)  
+**Author:** Tee (the ionganic)
 **For:** Ahmed El-Gazzar (Technical DevOps Lead)  
 **Status:** Implementation Ready
 
@@ -1752,6 +1752,6 @@ interface DiagnosticReport {
 ---
 
 *Document Version: 1.1*  
-*Prepared by: Tee (CTO)*  
+*Prepared by: Tee (the Ionganic*  
 *For: Ahmed El-Gazzar (Technical DevOps Lead)*  
 *RootRise by DEVONEERS — January 2026*
