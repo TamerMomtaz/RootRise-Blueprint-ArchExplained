@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "7.0",
-    "lastUpdated": "2026-01-06",
+    "lastUpdated": "Jan 2026",
     "platform": "RootRise by DEVONEERS",
     "description": "Complete technical documentation for The Pantheon AI-powered SME transformation platform"
   },
@@ -13,34 +13,34 @@
       "description": "Foundation documents defining the RootRise platform architecture, system design, and technical specifications.",
       "docs": [
         {
-          "file": "docs/RootRise_Master_Summary_v7.0.md",
+          "file": "architecture/MASTER SUMMARY/RootRise_Master_Summary_v7.0.md",
           "icon": "📋",
           "name": "Master Summary v7.0",
           "category": "Overview",
-          "description": "Single source of truth for all architecture decisions. Covers 11 agents, 31 sectors, 17 lenses, 6 countries, and complete system overview.",
+          "description": "Single source of truth for all architecture decisions. Covers 11 agents, 31 sectors, 17 lenses, 6 countries.",
           "size": "906 lines",
           "featured": true
         },
         {
-          "file": "docs/RootRise_Infrastructure_Blueprint_v1.2.md",
+          "file": "architecture/BLUEPRINT/RootRise_Infrastructure_Blueprint_v1.2.md",
           "icon": "🏗️",
           "name": "Infrastructure Blueprint v1.2",
           "category": "Architecture",
-          "description": "Complete system architecture with LangGraph specifications, agent definitions, data flows, and deployment configuration.",
+          "description": "Complete system architecture with LangGraph specifications, agent definitions, and deployment configuration.",
           "size": "~2,000 lines",
           "featured": true
         },
         {
-          "file": "docs/RootRise_Technical_Handoff_v7.0.md",
+          "file": "architecture/MASTER SUMMARY/RootRise_Technical_Handoff_v7.0.md",
           "icon": "🔧",
           "name": "Technical Handoff v7.0",
           "category": "Development",
-          "description": "Developer implementation guide for Ahmed El-Gazzar. Includes LangGraph nodes, API endpoints, Frappe integration, and code examples.",
+          "description": "Developer implementation guide. Includes LangGraph nodes, API endpoints, Frappe integration, and code examples.",
           "size": "3,325 lines",
           "featured": true
         },
         {
-          "file": "docs/RootRise_Project_Brief_v3.0.md",
+          "file": "architecture/MASTER SUMMARY/RootRise_Project_Brief_v3.0.md",
           "icon": "📊",
           "name": "Project Brief v3.0",
           "category": "Overview",
@@ -49,7 +49,7 @@
           "featured": false
         },
         {
-          "file": "docs/RootRise_Infrastructure_QuickRef_v1.2.md",
+          "file": "architecture/BLUEPRINT/RootRise_Infrastructure_QuickRef_v1.2.md",
           "icon": "⚡",
           "name": "Infrastructure QuickRef v1.2",
           "category": "Reference",
@@ -66,20 +66,20 @@
       "description": "Questionnaire structure, report templates, and data model definitions for the diagnostic system.",
       "docs": [
         {
-          "file": "docs/RootRise_Questionnaire_Schema_v2.0.md",
+          "file": "architecture/QUESTION SCHEME/RootRise_Questionnaire_Schema_v2.0.md",
           "icon": "📝",
           "name": "Questionnaire Schema v2.0",
           "category": "Schema",
-          "description": "Complete questionnaire definition with 12 sections, ~160 questions, lens routing, conditional logic, and Crema integration.",
+          "description": "Complete questionnaire definition with 12 sections, ~160 questions, lens routing, and Crema integration.",
           "size": "5,693 lines",
           "featured": true
         },
         {
-          "file": "docs/RootRise_Report_Templates_v2.0.md",
+          "file": "architecture/REPPORTS/RootRise_Report_Templates_v2.0.md",
           "icon": "📄",
           "name": "Report Templates v2.0",
           "category": "Templates",
-          "description": "HTML/CSS templates for 8 report types including Crema Quick Wins, Investor Ready, and Export Roadmap. Full component library.",
+          "description": "HTML/CSS templates for 8 report types including Crema Quick Wins, Investor Ready, and Export Roadmap.",
           "size": "2,559 lines",
           "featured": true
         }
@@ -89,158 +89,158 @@
       "icon": "🔍",
       "label": "Lenses",
       "title": "The Lens System — 17 Transformation Lenses",
-      "description": "Strategic transformation lenses that route questions, activate agents, and shape diagnostic output. Each lens represents a business objective.",
+      "description": "Strategic transformation lenses that route questions, activate agents, and shape diagnostic output.",
       "docs": [
         {
-          "file": "docs/lenses/EYE-000_The_Crema.md",
+          "file": "Design/&Eye/EYE-000_The_Crema.md",
           "icon": "☕",
           "name": "EYE-000: The Crema",
           "category": "Special",
-          "description": "Quick Wins lens — filters recommendations into 30/60/90 day actionable buckets. Can combine with any other lens.",
+          "description": "Quick Wins lens — filters recommendations into 30/60/90 day actionable buckets.",
           "size": "23 KB",
           "featured": true
         },
         {
-          "file": "docs/lenses/EYE-001_Export_Readiness.md",
+          "file": "Design/&Eye/EYE-001_export_readiness.md",
           "icon": "🌍",
           "name": "EYE-001: Export Expansion",
           "category": "Growth",
-          "description": "Focus on international market readiness, certifications, logistics, and export revenue development.",
+          "description": "Focus on international market readiness, certifications, and export logistics.",
           "size": "16 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-002_Investment_Readiness.md",
+          "file": "Design/&Eye/EYE-002_Investment_Readiness.md",
           "icon": "💰",
           "name": "EYE-002: Investment Readiness",
           "category": "Growth",
-          "description": "Prepare for funding rounds with financial health focus, due diligence preparation, and investor-ready documentation.",
+          "description": "Prepare for funding with financial health focus and due diligence preparation.",
           "size": "45 KB",
           "featured": true
         },
         {
-          "file": "docs/lenses/EYE-003_Digital_Transformation.md",
+          "file": "Design/&Eye/EYE-003_Digital_Transformation.md",
           "icon": "💻",
           "name": "EYE-003: Digital Transformation",
           "category": "Transition",
-          "description": "Technology adoption roadmap, system integration assessment, and digital maturity improvement.",
+          "description": "Technology adoption roadmap and digital maturity improvement.",
           "size": "14 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-004_Operational_Excellence.md",
+          "file": "Design/&Eye/EYE-004_Operational_Excellence.md",
           "icon": "⚙️",
           "name": "EYE-004: Operational Excellence",
           "category": "Operations",
-          "description": "Lean operations focus with efficiency improvements, waste reduction, and process optimization.",
+          "description": "Lean operations focus with efficiency improvements and waste reduction.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-005_Market_Expansion.md",
+          "file": "Design/&Eye/EYE-005_Market_Expansion.md",
           "icon": "📈",
           "name": "EYE-005: Market Expansion",
           "category": "Growth",
-          "description": "Enter new markets or segments with competitive analysis and growth strategy development.",
+          "description": "Enter new markets with competitive analysis and growth strategy.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-006_Brand_Building.md",
+          "file": "Design/&Eye/EYE-006_Brand_Building.md",
           "icon": "🏷️",
           "name": "EYE-006: Brand Building",
           "category": "Growth",
-          "description": "Strengthen brand position with identity development, marketing strategy, and brand architecture.",
+          "description": "Strengthen brand position with identity and marketing strategy.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-007_Workforce_Development.md",
+          "file": "Design/&Eye/EYE-007_Workforce_Development.md",
           "icon": "👥",
           "name": "EYE-007: Workforce Development",
           "category": "Transition",
-          "description": "Build team capabilities with training programs, culture development, and HR system improvements.",
+          "description": "Build team capabilities with training and culture development.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-008_Supply_Chain_Optimization.md",
+          "file": "Design/&Eye/EYE-008_Supply_Chain_Optimization.md",
           "icon": "🔗",
           "name": "EYE-008: Supply Chain Optimization",
           "category": "Operations",
-          "description": "Strengthen supply chain with supplier management, logistics optimization, and inventory control.",
+          "description": "Strengthen supply chain with logistics and inventory control.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-009_Sustainability_ESG.md",
+          "file": "Design/&Eye/EYE-009_Sustainability_ESG.md",
           "icon": "🌿",
           "name": "EYE-009: Sustainability & ESG",
           "category": "Impact",
-          "description": "Environmental and social impact improvement with ESG compliance and sustainability initiatives.",
+          "description": "Environmental and social impact improvement with ESG compliance.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-010_Innovation_RnD.md",
+          "file": "Design/&Eye/EYE-010_Innovation_RD.md",
           "icon": "💡",
           "name": "EYE-010: Innovation & R&D",
           "category": "Growth",
-          "description": "Develop new products or services with innovation process and R&D capability building.",
+          "description": "Develop new products with innovation process and R&D capability.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-011_Customer_Experience.md",
+          "file": "Design/&Eye/EYE-011_Customer_Experience.md",
           "icon": "⭐",
           "name": "EYE-011: Customer Experience",
           "category": "Operations",
-          "description": "Improve customer satisfaction with service quality, feedback systems, and experience optimization.",
+          "description": "Improve customer satisfaction with service quality optimization.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-012_Cost_Optimization.md",
+          "file": "Design/&Eye/EYE-012_Cost_Optimization.md",
           "icon": "💵",
           "name": "EYE-012: Cost Optimization",
           "category": "Operations",
-          "description": "Reduce costs without sacrificing quality through efficiency gains and strategic cost management.",
+          "description": "Reduce costs without sacrificing quality through efficiency gains.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-013_Risk_Resilience.md",
+          "file": "Design/&Eye/EYE-013_Risk_Resilience.md",
           "icon": "🛡️",
           "name": "EYE-013: Risk & Resilience",
           "category": "Operations",
-          "description": "Protect against disruptions with risk assessment, business continuity, and resilience planning.",
+          "description": "Protect against disruptions with business continuity planning.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-014_Succession_Governance.md",
+          "file": "Design/&Eye/EYE-014_Succession_Governance.md",
           "icon": "👔",
           "name": "EYE-014: Succession & Governance",
           "category": "Transition",
-          "description": "Prepare for leadership transition with succession planning and governance structure improvement.",
+          "description": "Prepare for leadership transition with succession planning.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-015_Partnership_MA.md",
+          "file": "Design/&Eye/EYE-015_Partnership_MA.md",
           "icon": "🤝",
           "name": "EYE-015: Partnership & M&A",
           "category": "Impact",
-          "description": "Find strategic partners or acquisition targets with partnership readiness assessment.",
+          "description": "Find strategic partners with partnership readiness assessment.",
           "size": "~60 KB",
           "featured": false
         },
         {
-          "file": "docs/lenses/EYE-CUSTOM_Custom_Objective.md",
+          "file": "Design/&Eye/EYE-CUSTOM_Custom_Object.md",
           "icon": "🎯",
           "name": "EYE-CUSTOM: Custom Objective",
           "category": "Special",
-          "description": "Define your own transformation objective. Drucker routes diagnostic based on custom goal analysis.",
+          "description": "Define your own transformation objective with dynamic routing.",
           "size": "19 KB",
           "featured": false
         }
@@ -250,19 +250,19 @@
       "icon": "🏭",
       "label": "Sectors",
       "title": "Sector Knowledge Packs — 31 Industries",
-      "description": "Industry-specific intelligence with benchmarks, regulations, KPIs, and agent instructions for 6 MENA countries.",
+      "description": "Industry-specific intelligence with benchmarks, regulations, and KPIs for MENA markets.",
       "docs": [
         {
-          "file": "docs/sectors/SECTOR-001_Food_Processing.md",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_FoodBeverage_Manufacturing_Complete.md",
           "icon": "🍞",
-          "name": "Food Processing & Beverages",
+          "name": "Food & Beverage Manufacturing",
           "category": "Manufacturing",
           "description": "HACCP, halal certification, cold chain, food safety standards.",
           "size": "v2.0",
           "featured": true
         },
         {
-          "file": "docs/sectors/SECTOR-002_Textiles_Apparel.md",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Textiles_Apparel_Complete_v2 (1).md",
           "icon": "👔",
           "name": "Textiles & Apparel",
           "category": "Manufacturing",
@@ -271,205 +271,16 @@
           "featured": true
         },
         {
-          "file": "docs/sectors/SECTOR-003_Building_Materials.md",
-          "icon": "🧱",
-          "name": "Building Materials & Construction",
-          "category": "Manufacturing",
-          "description": "Safety certifications, construction standards, logistics.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-004_Chemicals_Plastics.md",
-          "icon": "⚗️",
-          "name": "Chemicals & Plastics",
-          "category": "Manufacturing",
-          "description": "Environmental compliance, safety protocols, REACH.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-005_Pharmaceuticals.md",
-          "icon": "💊",
-          "name": "Pharmaceuticals & Medical Devices",
-          "category": "Manufacturing",
-          "description": "GMP, FDA/EMA alignment, clinical standards.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-006_Electronics.md",
-          "icon": "📱",
-          "name": "Electronics & Electrical Equipment",
-          "category": "Manufacturing",
-          "description": "Quality systems, RoHS compliance, testing standards.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-007_Automotive.md",
-          "icon": "🚗",
-          "name": "Automotive Parts & Assembly",
-          "category": "Manufacturing",
-          "description": "IATF 16949, OEM requirements, supply chain.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-008_Metal_Fabrication.md",
-          "icon": "🔩",
-          "name": "Metal Fabrication & Machinery",
-          "category": "Manufacturing",
-          "description": "Precision standards, export certifications, quality.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-009_Professional_Services.md",
-          "icon": "💼",
-          "name": "Professional Services",
-          "category": "Services",
-          "description": "Legal, accounting, consulting credentials and practices.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-010_Healthcare_Services.md",
-          "icon": "🏥",
-          "name": "Healthcare Services",
-          "category": "Services",
-          "description": "Medical licensing, accreditation, patient care standards.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-011_Education_Training.md",
-          "icon": "🎓",
-          "name": "Education & Training",
-          "category": "Services",
-          "description": "Accreditation, quality assurance, curriculum standards.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-012_Hospitality_Tourism.md",
-          "icon": "🏨",
-          "name": "Hospitality & Tourism",
-          "category": "Services",
-          "description": "Service standards, seasonality, customer experience.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-013_Transportation_Logistics.md",
-          "icon": "🚚",
-          "name": "Transportation & Logistics",
-          "category": "Services",
-          "description": "Fleet management, compliance, route optimization.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-014_Financial_Services.md",
-          "icon": "🏦",
-          "name": "Financial Services (Non-Banking)",
-          "category": "Services",
-          "description": "Regulatory compliance, fintech integration, risk management.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-015_Creative_Media.md",
-          "icon": "🎬",
-          "name": "Creative & Media Services",
-          "category": "Services",
-          "description": "IP protection, project management, content standards.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-016_Facility_Management.md",
-          "icon": "🏢",
-          "name": "Facility Management & Security",
-          "category": "Services",
-          "description": "Service standards, licensing, safety protocols.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-017_Software_IT.md",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Technology_Complete_v2.md",
           "icon": "💻",
-          "name": "Software Development & IT Services",
+          "name": "Technology & Software",
           "category": "Technology",
           "description": "Agile practices, security standards, SaaS metrics.",
           "size": "v2.0",
           "featured": true
         },
         {
-          "file": "docs/sectors/SECTOR-018_Ecommerce.md",
-          "icon": "🛒",
-          "name": "E-commerce & Digital Platforms",
-          "category": "Technology",
-          "description": "Conversion optimization, logistics, UX standards.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-019_FinTech.md",
-          "icon": "📲",
-          "name": "FinTech",
-          "category": "Technology",
-          "description": "Regulatory compliance, security, growth metrics.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-020_CleanTech.md",
-          "icon": "🌱",
-          "name": "CleanTech & Renewable Energy",
-          "category": "Technology",
-          "description": "Environmental regulations, incentive programs, standards.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-021_Wholesale.md",
-          "icon": "📦",
-          "name": "Wholesale Distribution",
-          "category": "Trade",
-          "description": "Inventory management, supplier relationships, logistics.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-022_Retail.md",
-          "icon": "🏪",
-          "name": "Retail Trade",
-          "category": "Trade",
-          "description": "Customer experience, margins, omnichannel operations.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-023_Import_Export.md",
-          "icon": "🚢",
-          "name": "Import/Export Trading",
-          "category": "Trade",
-          "description": "Trade compliance, customs, international logistics.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-024_Franchising.md",
-          "icon": "🔗",
-          "name": "Franchising & Licensing",
-          "category": "Trade",
-          "description": "Brand standards, expansion models, compliance.",
-          "size": "v2.0",
-          "featured": false
-        },
-        {
-          "file": "docs/sectors/SECTOR-025_Agriculture.md",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Agriculture_Complete_v2.md",
           "icon": "🌾",
           "name": "Agriculture & Agribusiness",
           "category": "Primary",
@@ -478,56 +289,245 @@
           "featured": false
         },
         {
-          "file": "docs/sectors/SECTOR-026_Fishing_Aquaculture.md",
-          "icon": "🐟",
-          "name": "Fishing & Aquaculture",
-          "category": "Primary",
-          "description": "Sustainability, cold chain, export standards.",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Automotive_Complete_v2.md",
+          "icon": "🚗",
+          "name": "Automotive",
+          "category": "Manufacturing",
+          "description": "IATF 16949, OEM requirements, supply chain.",
           "size": "v2.0",
           "featured": false
         },
         {
-          "file": "docs/sectors/SECTOR-027_Mining.md",
-          "icon": "⛏️",
-          "name": "Mining & Quarrying",
-          "category": "Primary",
-          "description": "Safety protocols, environmental compliance.",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Beauty_Wellness_Complete.md",
+          "icon": "💄",
+          "name": "Beauty & Wellness",
+          "category": "Services",
+          "description": "Licensing, product standards, customer experience.",
           "size": "v2.0",
           "featured": false
         },
         {
-          "file": "docs/sectors/SECTOR-028_Oil_Gas.md",
-          "icon": "🛢️",
-          "name": "Oil & Gas Services",
-          "category": "Primary",
-          "description": "Safety certifications, industry standards.",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Chemicals_Complete_v2.md",
+          "icon": "⚗️",
+          "name": "Chemicals",
+          "category": "Manufacturing",
+          "description": "Environmental compliance, safety protocols, REACH.",
           "size": "v2.0",
           "featured": false
         },
         {
-          "file": "docs/sectors/SECTOR-029_Real_Estate.md",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Construction_Complete_v2.md",
           "icon": "🏗️",
-          "name": "Real Estate Development",
-          "category": "Specialized",
-          "description": "Project management, financing, regulations.",
+          "name": "Construction",
+          "category": "Manufacturing",
+          "description": "Safety certifications, construction standards.",
           "size": "v2.0",
           "featured": false
         },
         {
-          "file": "docs/sectors/SECTOR-030_Waste_Management.md",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Creative_Industries_Complete.md",
+          "icon": "🎬",
+          "name": "Creative Industries",
+          "category": "Services",
+          "description": "IP protection, project management, content standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Education_Complete_v2.md",
+          "icon": "🎓",
+          "name": "Education & Training",
+          "category": "Services",
+          "description": "Accreditation, quality assurance, curriculum standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Electronics_Manufacturing_Complete.md",
+          "icon": "📱",
+          "name": "Electronics Manufacturing",
+          "category": "Manufacturing",
+          "description": "Quality systems, RoHS compliance, testing standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Energy_Utilities_Complete.md",
+          "icon": "⚡",
+          "name": "Energy & Utilities",
+          "category": "Primary",
+          "description": "Regulations, safety standards, infrastructure.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Environmental_Services_Complete.md",
           "icon": "♻️",
-          "name": "Waste Management & Recycling",
+          "name": "Environmental Services",
           "category": "Specialized",
           "description": "Environmental compliance, processing standards.",
           "size": "v2.0",
           "featured": false
         },
         {
-          "file": "docs/sectors/SECTOR-031_Artisanal.md",
-          "icon": "🎨",
-          "name": "Artisanal & Handicrafts",
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_FillingBottling_Complete.md",
+          "icon": "🍶",
+          "name": "Filling & Bottling",
+          "category": "Manufacturing",
+          "description": "Production standards, quality control, packaging.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Financial_Complete_v2.md",
+          "icon": "🏦",
+          "name": "Financial Services",
+          "category": "Services",
+          "description": "Regulatory compliance, fintech integration.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Furniture_Manufacturing_Complete.md",
+          "icon": "🪑",
+          "name": "Furniture Manufacturing",
+          "category": "Manufacturing",
+          "description": "Quality standards, design, export certifications.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Healthcare_Complete_v2.md",
+          "icon": "🏥",
+          "name": "Healthcare Services",
+          "category": "Services",
+          "description": "Medical licensing, accreditation, patient care.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_HomeBased_Micro_Complete.md",
+          "icon": "🏠",
+          "name": "Home-Based & Micro",
           "category": "Specialized",
-          "description": "Heritage preservation, export potential, quality.",
+          "description": "Formalization, growth paths, licensing.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Hospitality_Complete_v2.md",
+          "icon": "🏨",
+          "name": "Hospitality & Tourism",
+          "category": "Services",
+          "description": "Service standards, seasonality, customer experience.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Logistics_Complete_v2.md",
+          "icon": "🚚",
+          "name": "Logistics & Transportation",
+          "category": "Services",
+          "description": "Fleet management, compliance, route optimization.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Maintenance_Repair_Complete.md",
+          "icon": "🔧",
+          "name": "Maintenance & Repair",
+          "category": "Services",
+          "description": "Service standards, equipment, certifications.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Metal_Complete_v2.md",
+          "icon": "🔩",
+          "name": "Metal Fabrication",
+          "category": "Manufacturing",
+          "description": "Precision standards, export certifications, quality.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_PaperPrinting_Complete.md",
+          "icon": "📰",
+          "name": "Paper & Printing",
+          "category": "Manufacturing",
+          "description": "Production standards, sustainability, quality.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Pharmaceuticals_Complete_v2.md",
+          "icon": "💊",
+          "name": "Pharmaceuticals",
+          "category": "Manufacturing",
+          "description": "GMP, FDA/EMA alignment, clinical standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Plastics_Manufacturing_Complete.md",
+          "icon": "🧪",
+          "name": "Plastics Manufacturing",
+          "category": "Manufacturing",
+          "description": "Environmental compliance, recycling, standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Professional_Complete_v2.md",
+          "icon": "💼",
+          "name": "Professional Services",
+          "category": "Services",
+          "description": "Credentials, client management, expertise.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_RealEstate_Complete_v2.md",
+          "icon": "🏢",
+          "name": "Real Estate",
+          "category": "Specialized",
+          "description": "Project management, financing, regulations.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Retail_Complete_v2.md",
+          "icon": "🏪",
+          "name": "Retail Trade",
+          "category": "Trade",
+          "description": "Customer experience, margins, omnichannel.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Security_Services_Complete.md",
+          "icon": "🛡️",
+          "name": "Security Services",
+          "category": "Services",
+          "description": "Licensing, training, compliance standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Telecommunications_Complete.md",
+          "icon": "📡",
+          "name": "Telecommunications",
+          "category": "Technology",
+          "description": "Regulatory compliance, infrastructure, service.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/RootRise_Sector_Trading_Distribution_Complete.md",
+          "icon": "📦",
+          "name": "Trading & Distribution",
+          "category": "Trade",
+          "description": "Inventory management, supplier relationships.",
           "size": "v2.0",
           "featured": false
         }
@@ -536,168 +536,140 @@
     "agents": {
       "icon": "🤖",
       "label": "Agents",
-      "title": "The Pantheon — 11 AI Agents",
-      "description": "Specialist AI agents named after business pioneers. Each agent has a domain, methodology, and persona.",
+      "title": "The Pantheon — AI Agent Prompts",
+      "description": "System prompts and configurations for the 11 specialist AI agents.",
       "docs": [
         {
-          "file": "docs/agents/AGENT_Drucker.md",
+          "file": "agents/RootRise_Core_Agent_Prompts.md",
           "icon": "🎯",
-          "name": "Drucker — The Conductor",
-          "category": "Supervisor",
-          "description": "Orchestration & Strategy. Management by Objectives. Always active, routes all diagnostic flow.",
-          "size": "Reference",
-          "featured": true
-        },
-        {
-          "file": "docs/agents/AGENT_Graham.md",
-          "icon": "💎",
-          "name": "Graham — The Numbers Whisperer",
+          "name": "Core Agent Prompts",
           "category": "Core",
-          "description": "Financial Analysis. Value Investing Principles. Always active, provides financial baseline.",
+          "description": "Drucker (Supervisor) and Graham (Financial) — always active agents.",
           "size": "Reference",
           "featured": true
         },
         {
-          "file": "docs/agents/AGENT_Marvin.md",
+          "file": "agents/RootRise_AddOn_Agent_Prompts.md",
           "icon": "⚙️",
-          "name": "Marvin — The Optimizer",
-          "category": "Core",
-          "description": "Operations & Efficiency. Lean Manufacturing. Active for manufacturing and operations lenses.",
+          "name": "Add-On Agent Prompts",
+          "category": "Specialist",
+          "description": "Marvin, Lovelace, Mayo, Porter, Ohno, Deming, Ricardo, Landor — specialist agents.",
           "size": "Reference",
           "featured": true
         },
         {
-          "file": "docs/agents/AGENT_Lovelace.md",
-          "icon": "🔮",
-          "name": "Lovelace — The Digitizer",
-          "category": "Specialist",
-          "description": "Technology & Digital. Digital Maturity Models. Active for digital transformation focus.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "docs/agents/AGENT_Mayo.md",
-          "icon": "🌱",
-          "name": "Mayo — The People Person",
-          "category": "Specialist",
-          "description": "HR & Culture. Human Relations Theory. Active for workforce development focus.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "docs/agents/AGENT_Porter.md",
-          "icon": "♟️",
-          "name": "Porter — The Strategist",
-          "category": "Specialist",
-          "description": "Market & Competition. Five Forces Analysis. Active for market and strategy lenses.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "docs/agents/AGENT_Ohno.md",
-          "icon": "🌊",
-          "name": "Ohno — The Flow Master",
-          "category": "Specialist",
-          "description": "Supply Chain & Logistics. Toyota Production System. Active for supply chain focus.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "docs/agents/AGENT_Deming.md",
-          "icon": "📐",
-          "name": "Deming — The Perfectionist",
-          "category": "Specialist",
-          "description": "Quality & Compliance. PDCA Cycle. Active for quality and risk lenses.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "docs/agents/AGENT_Ricardo.md",
-          "icon": "🧭",
-          "name": "Ricardo — The Globalizer",
-          "category": "Specialist",
-          "description": "Export & Trade. Comparative Advantage. Active for export readiness lens.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "docs/agents/AGENT_Landor.md",
-          "icon": "📣",
-          "name": "Landor — The Storyteller",
-          "category": "Specialist",
-          "description": "Brand & Marketing. Brand Architecture. Active for brand and marketing lenses.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "docs/agents/AGENT_Tufte.md",
+          "file": "agents/RootRise_Utility_Agent_Prompts.md",
           "icon": "📊",
-          "name": "Tufte — The Visualizer",
+          "name": "Utility Agent Prompts",
           "category": "Utility",
-          "description": "Data Visualization & Reporting. Always active as final step for report generation.",
+          "description": "Tufte (The Visualizer) — report generation agent.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "resources/RootRise_Agent_QuickRef.md",
+          "icon": "⚡",
+          "name": "Agent Quick Reference",
+          "category": "Reference",
+          "description": "Quick reference card for all 11 agents with personas and domains.",
           "size": "Reference",
           "featured": false
         }
       ]
     },
-    "countries": {
-      "icon": "🌍",
-      "label": "Countries",
-      "title": "MENA Coverage — 6 Countries",
-      "description": "Country-specific context including regulations, incentives, market characteristics, and localization for each MENA market.",
+    "resources": {
+      "icon": "📚",
+      "label": "Resources",
+      "title": "Reference Materials & Indexes",
+      "description": "Quick reference guides, indexes, and supporting documentation.",
       "docs": [
         {
-          "file": "docs/countries/COUNTRY_EG_Egypt.md",
-          "icon": "🇪🇬",
-          "name": "Egypt",
-          "category": "Primary Market",
-          "description": "Largest SME base in MENA. Primary market with comprehensive regulatory and incentive mapping.",
+          "file": "resources/RootRise_Lens_Index.md",
+          "icon": "🔍",
+          "name": "Lens Index",
+          "category": "Index",
+          "description": "Complete index of all 17 transformation lenses with codes and descriptions.",
           "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "resources/RootRise_Sector_Index.md",
+          "icon": "🏭",
+          "name": "Sector Index",
+          "category": "Index",
+          "description": "Complete index of all 31 sector knowledge packs with categories.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "Sector Knowledge V2 2026/framework/RootRise_Sector_Knowledge_Framework_v2.md",
+          "icon": "📐",
+          "name": "Sector Knowledge Framework v2",
+          "category": "Framework",
+          "description": "Framework document explaining sector pack structure and methodology.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "Design/RootRise_Color_System_v6.5_Reference.md",
+          "icon": "🎨",
+          "name": "Color System Reference",
+          "category": "Design",
+          "description": "Complete color palette and design system documentation.",
+          "size": "Reference",
+          "featured": false
+        }
+      ]
+    },
+    "presentations": {
+      "icon": "📽️",
+      "label": "Presentations",
+      "title": "Investor & Partner Presentations",
+      "description": "PDF presentations for investors, partners, and stakeholders.",
+      "docs": [
+        {
+          "file": "Presentations/DEVONEERS_RootRise_EBRD_Star_Venture.pdf",
+          "icon": "🏆",
+          "name": "EBRD Star Venture Pitch",
+          "category": "Investor",
+          "description": "Pitch deck for EBRD Star Venture Programme application.",
+          "size": "PDF",
           "featured": true
         },
         {
-          "file": "docs/countries/COUNTRY_SA_Saudi.md",
-          "icon": "🇸🇦",
-          "name": "Saudi Arabia",
-          "category": "Growth Market",
-          "description": "Vision 2030 alignment, Saudization requirements, and mega-project opportunities.",
-          "size": "Reference",
-          "featured": true
-        },
-        {
-          "file": "docs/countries/COUNTRY_AE_UAE.md",
-          "icon": "🇦🇪",
-          "name": "United Arab Emirates",
-          "category": "Growth Market",
-          "description": "Free zone structures, high digitalization, and regional hub positioning.",
-          "size": "Reference",
+          "file": "Presentations/DEVONEERS_RootRise_AI-Powered_Dec_2025.pdf",
+          "icon": "🤖",
+          "name": "AI-Powered Overview",
+          "category": "Overview",
+          "description": "Overview of AI capabilities and The Pantheon architecture.",
+          "size": "PDF",
           "featured": false
         },
         {
-          "file": "docs/countries/COUNTRY_JO_Jordan.md",
-          "icon": "🇯🇴",
-          "name": "Jordan",
-          "category": "Expansion Market",
-          "description": "Services focus, regional hub, and trade agreements context.",
-          "size": "Reference",
+          "file": "Presentations/DEVONEERS_-_RootRise_-_Dec_2025.pdf",
+          "icon": "📊",
+          "name": "RootRise December 2025",
+          "category": "Overview",
+          "description": "Full platform overview presentation December 2025.",
+          "size": "PDF",
           "featured": false
         },
         {
-          "file": "docs/countries/COUNTRY_LB_Lebanon.md",
-          "icon": "🇱🇧",
-          "name": "Lebanon",
-          "category": "Expansion Market",
-          "description": "Dollarized economy, diaspora focus, and services expertise. NEW in v7.0.",
-          "size": "Reference",
+          "file": "Presentations/RootRise_Architecture_Upgrade.pdf",
+          "icon": "🏗️",
+          "name": "Architecture Upgrade",
+          "category": "Technical",
+          "description": "Technical architecture upgrade presentation.",
+          "size": "PDF",
           "featured": false
         },
         {
-          "file": "docs/countries/COUNTRY_MA_Morocco.md",
-          "icon": "🇲🇦",
-          "name": "Morocco",
-          "category": "Expansion Market",
-          "description": "EU proximity, Africa gateway, and francophone market access. NEW in v7.0.",
-          "size": "Reference",
+          "file": "Presentations/RootRise_by_DEVONEERS_v2_compressed.pdf",
+          "icon": "📄",
+          "name": "RootRise by DEVONEERS v2",
+          "category": "Overview",
+          "description": "Comprehensive platform presentation v2.",
+          "size": "PDF",
           "featured": false
         }
       ]
