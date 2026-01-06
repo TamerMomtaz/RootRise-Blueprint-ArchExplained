@@ -5,7 +5,7 @@ id: EYE-001
 title: Export Readiness Transformation Lens
 language: EN
 version: v1.0
-date: 2026-01
+date: 2026-01-06
 sector_specific: false
 sectors: all
 eye_lenses: export-readiness
