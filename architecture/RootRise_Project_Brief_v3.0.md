@@ -19,15 +19,7 @@ RootRise is an AI-powered SME transformation platform operating under DEVONEERS,
 |------|------|---------------|
 | **Ruba** | Co-Founder & CEO | Strategic direction, brand positioning, design system, visual identity |
 | **Alaa** | Co-Founder & CSO | Strategy, user experience, multi-agent flexibility, "made for me" vision |
-| **Tee** | Product Creative Strategist | Technical architecture, product development, 15+ years manufacturing ops, "The Ionganic Orchestrator (TIO)" |
-
-### Tee's Unique Position
-Tee operates across two roles:
-- **RootRise:** Product Creative Strategist driving platform architecture and AI system design
-- **Al-Manar Plant:** Plant Director managing 300+ employees with deep manufacturing operations experience
-
-This dual role provides authentic SME credibility and a network of 200+ SME relationships that inform RootRise's development.
-
+| **Tee** | Product Creative Strategist | "The Ionganic Orchestrator (TIO)" |
 ---
 
 ## 🏗️ Platform Architecture (January 2026)
