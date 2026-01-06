@@ -162,7 +162,7 @@ Visual design system and brand assets.
 |------|--------|-------|
 | **CEO** | Ruba | Strategy, Brand, Design |
 | **CSO** | Alla | User Experience, Flexibility |
-| **CTO** | Tee | Technical Architecture, Product |
+| **TIO** | Tee | The Ionganic Orchestrator |
 | **DevOps Lead** | Ahmed El-Gazzar | Implementation |
 
 ---
