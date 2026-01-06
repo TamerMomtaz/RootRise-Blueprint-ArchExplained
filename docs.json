@@ -1,641 +1,704 @@
 {
   "meta": {
-    "version": "1.0.0",
-    "lastUpdated": "2025-12-18",
-    "maintainer": "Tee (CTO)",
-    "description": "RootRise Blueprint & ArchExplained Documentation Hub"
+    "version": "7.0",
+    "lastUpdated": "January 2026",
+    "platform": "RootRise by DEVONEERS",
+    "description": "Complete technical documentation for The Pantheon AI-powered SME transformation platform"
   },
   "sections": {
     "architecture": {
-      "label": "Infrastructure",
-      "title": "Technical Architecture",
-      "description": "Infrastructure blueprints, questionnaire schemas, report templates, and system design documents.",
-      "icon": "🏗️",
-      "color": "gold",
+      "icon": "🏛️",
+      "label": "Architecture",
+      "title": "Core Architecture Documents",
+      "description": "Foundation documents defining the RootRise platform architecture, system design, and technical specifications.",
       "docs": [
         {
-          "file": "architecture/RootRise_Infrastructure_Blueprint_v1.md",
-          "name": "Infrastructure Blueprint v1",
-          "description": "Complete technical architecture, LangGraph orchestration, database schemas, API specifications.",
-          "category": "Core Infrastructure",
-          "icon": "🏛️",
-          "size": "203 KB",
-          "featured": true,
-          "dateAdded": "2025-12-15"
-        },
-        {
-          "file": "architecture/RootRise_Questionnaire_Schema_v1.md",
-          "name": "Questionnaire Schema v1",
-          "description": "Diagnostic question structure, conditional logic, and validation rules.",
-          "category": "Schema",
+          "file": "docs/RootRise_Master_Summary_v7.0.md",
           "icon": "📋",
-          "size": "124 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
-        },
-        {
-          "file": "architecture/RootRise_Report_Templates_v1.md",
-          "name": "Report Templates v1",
-          "description": "Output templates for diagnostic reports and SME assessments.",
-          "category": "Templates",
-          "icon": "📄",
-          "size": "29 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
-        },
-        {
-          "file": "architecture/RootRise_Infrastructure_QuickRef.md",
-          "name": "Infrastructure Quick Ref",
-          "description": "Condensed technical overview for developers.",
-          "category": "Quick Reference",
-          "icon": "⚡",
-          "size": "6 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
-        },
-        {
-          "file": "architecture/RootRise_Project_Brief.md",
-          "name": "Project Brief",
-          "description": "Complete project context, requirements, and strategic direction.",
+          "name": "Master Summary v7.0",
           "category": "Overview",
-          "icon": "📖",
-          "size": "17 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
+          "description": "Single source of truth for all architecture decisions. Covers 11 agents, 31 sectors, 17 lenses, 6 countries, and complete system overview.",
+          "size": "906 lines",
+          "featured": true
         },
         {
-          "file": "architecture/RootRise_Technical_Handoff_v6.docx",
-          "name": "Technical Handoff v6",
-          "description": "Complete technical handoff documentation for implementation team.",
-          "category": "Handoff",
-          "icon": "🤝",
-          "size": "~50 KB",
-          "featured": false,
-          "dateAdded": "2025-12-17"
+          "file": "docs/RootRise_Infrastructure_Blueprint_v1.2.md",
+          "icon": "🏗️",
+          "name": "Infrastructure Blueprint v1.2",
+          "category": "Architecture",
+          "description": "Complete system architecture with LangGraph specifications, agent definitions, data flows, and deployment configuration.",
+          "size": "~2,000 lines",
+          "featured": true
+        },
+        {
+          "file": "docs/RootRise_Technical_Handoff_v7.0.md",
+          "icon": "🔧",
+          "name": "Technical Handoff v7.0",
+          "category": "Development",
+          "description": "Developer implementation guide for Ahmed El-Gazzar. Includes LangGraph nodes, API endpoints, Frappe integration, and code examples.",
+          "size": "3,325 lines",
+          "featured": true
+        },
+        {
+          "file": "docs/RootRise_Project_Brief_v3.0.md",
+          "icon": "📊",
+          "name": "Project Brief v3.0",
+          "category": "Overview",
+          "description": "Stakeholder overview document with team structure, timeline, market opportunity, and complete system summary.",
+          "size": "544 lines",
+          "featured": false
+        },
+        {
+          "file": "docs/RootRise_Infrastructure_QuickRef_v1.2.md",
+          "icon": "⚡",
+          "name": "Infrastructure QuickRef v1.2",
+          "category": "Reference",
+          "description": "One-page quick reference card for developers. Agent registry, lens codes, sector codes, dimension weights.",
+          "size": "~200 lines",
+          "featured": false
         }
       ]
     },
-    "agents": {
-      "label": "The Pantheon",
-      "title": "AI Agent System",
-      "description": "Multi-agent prompts and configurations — named after business pioneers.",
-      "icon": "🤖",
-      "color": "gold",
+    "schemas": {
+      "icon": "📐",
+      "label": "Schemas",
+      "title": "Data Schemas & Templates",
+      "description": "Questionnaire structure, report templates, and data model definitions for the diagnostic system.",
       "docs": [
         {
-          "file": "agents/RootRise_Core_Agent_Prompts.md",
-          "name": "Core Agent Prompts",
-          "description": "The Drucker (Supervisor), The Marvin (Diagnostic), The Graham (Finance).",
-          "category": "Core Agents",
-          "icon": "🎯",
-          "size": "59 KB",
-          "featured": true,
-          "dateAdded": "2025-12-15"
+          "file": "docs/RootRise_Questionnaire_Schema_v2.0.md",
+          "icon": "📝",
+          "name": "Questionnaire Schema v2.0",
+          "category": "Schema",
+          "description": "Complete questionnaire definition with 12 sections, ~160 questions, lens routing, conditional logic, and Crema integration.",
+          "size": "5,693 lines",
+          "featured": true
         },
         {
-          "file": "agents/RootRise_AddOn_Agent_Prompts.md",
-          "name": "Add-On Agent Prompts",
-          "description": "Export, Digital Transformation, HR, Supply Chain, Market Analysis specialists.",
-          "category": "Add-On Agents",
-          "icon": "➕",
-          "size": "104 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
-        },
-        {
-          "file": "agents/RootRise_Utility_Agent_Prompts.md",
-          "name": "Utility Agent Prompts",
-          "description": "Orchestration support, data processing, and auxiliary functions.",
-          "category": "Utility Agents",
-          "icon": "🔧",
-          "size": "67 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
+          "file": "docs/RootRise_Report_Templates_v2.0.md",
+          "icon": "📄",
+          "name": "Report Templates v2.0",
+          "category": "Templates",
+          "description": "HTML/CSS templates for 8 report types including Crema Quick Wins, Investor Ready, and Export Roadmap. Full component library.",
+          "size": "2,559 lines",
+          "featured": true
         }
       ]
     },
     "lenses": {
-      "label": "The &Eye",
-      "title": "Transformation Lenses",
-      "description": "15 transformation lenses that reprioritize diagnostics toward specific business goals.",
-      "icon": "👁️",
-      "color": "burgundy",
+      "icon": "🔍",
+      "label": "Lenses",
+      "title": "The Lens System — 17 Transformation Lenses",
+      "description": "Strategic transformation lenses that route questions, activate agents, and shape diagnostic output. Each lens represents a business objective.",
       "docs": [
         {
-          "file": "Lenses/RootRise_Eye_Lens_Framework.md",
-          "name": "The &Eye Lens Framework",
-          "description": "Complete framework for 15 transformation lenses: Quick Wins, Growth, Export Readiness, and more.",
-          "category": "Framework",
-          "icon": "🔮",
-          "size": "72 KB",
-          "featured": true,
-          "dateAdded": "2025-12-17"
+          "file": "docs/lenses/EYE-000_The_Crema.md",
+          "icon": "☕",
+          "name": "EYE-000: The Crema",
+          "category": "Special",
+          "description": "Quick Wins lens — filters recommendations into 30/60/90 day actionable buckets. Can combine with any other lens.",
+          "size": "23 KB",
+          "featured": true
+        },
+        {
+          "file": "docs/lenses/EYE-001_Export_Readiness.md",
+          "icon": "🌍",
+          "name": "EYE-001: Export Expansion",
+          "category": "Growth",
+          "description": "Focus on international market readiness, certifications, logistics, and export revenue development.",
+          "size": "16 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-002_Investment_Readiness.md",
+          "icon": "💰",
+          "name": "EYE-002: Investment Readiness",
+          "category": "Growth",
+          "description": "Prepare for funding rounds with financial health focus, due diligence preparation, and investor-ready documentation.",
+          "size": "45 KB",
+          "featured": true
+        },
+        {
+          "file": "docs/lenses/EYE-003_Digital_Transformation.md",
+          "icon": "💻",
+          "name": "EYE-003: Digital Transformation",
+          "category": "Transition",
+          "description": "Technology adoption roadmap, system integration assessment, and digital maturity improvement.",
+          "size": "14 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-004_Operational_Excellence.md",
+          "icon": "⚙️",
+          "name": "EYE-004: Operational Excellence",
+          "category": "Operations",
+          "description": "Lean operations focus with efficiency improvements, waste reduction, and process optimization.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-005_Market_Expansion.md",
+          "icon": "📈",
+          "name": "EYE-005: Market Expansion",
+          "category": "Growth",
+          "description": "Enter new markets or segments with competitive analysis and growth strategy development.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-006_Brand_Building.md",
+          "icon": "🏷️",
+          "name": "EYE-006: Brand Building",
+          "category": "Growth",
+          "description": "Strengthen brand position with identity development, marketing strategy, and brand architecture.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-007_Workforce_Development.md",
+          "icon": "👥",
+          "name": "EYE-007: Workforce Development",
+          "category": "Transition",
+          "description": "Build team capabilities with training programs, culture development, and HR system improvements.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-008_Supply_Chain_Optimization.md",
+          "icon": "🔗",
+          "name": "EYE-008: Supply Chain Optimization",
+          "category": "Operations",
+          "description": "Strengthen supply chain with supplier management, logistics optimization, and inventory control.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-009_Sustainability_ESG.md",
+          "icon": "🌿",
+          "name": "EYE-009: Sustainability & ESG",
+          "category": "Impact",
+          "description": "Environmental and social impact improvement with ESG compliance and sustainability initiatives.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-010_Innovation_RnD.md",
+          "icon": "💡",
+          "name": "EYE-010: Innovation & R&D",
+          "category": "Growth",
+          "description": "Develop new products or services with innovation process and R&D capability building.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-011_Customer_Experience.md",
+          "icon": "⭐",
+          "name": "EYE-011: Customer Experience",
+          "category": "Operations",
+          "description": "Improve customer satisfaction with service quality, feedback systems, and experience optimization.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-012_Cost_Optimization.md",
+          "icon": "💵",
+          "name": "EYE-012: Cost Optimization",
+          "category": "Operations",
+          "description": "Reduce costs without sacrificing quality through efficiency gains and strategic cost management.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-013_Risk_Resilience.md",
+          "icon": "🛡️",
+          "name": "EYE-013: Risk & Resilience",
+          "category": "Operations",
+          "description": "Protect against disruptions with risk assessment, business continuity, and resilience planning.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-014_Succession_Governance.md",
+          "icon": "👔",
+          "name": "EYE-014: Succession & Governance",
+          "category": "Transition",
+          "description": "Prepare for leadership transition with succession planning and governance structure improvement.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-015_Partnership_MA.md",
+          "icon": "🤝",
+          "name": "EYE-015: Partnership & M&A",
+          "category": "Impact",
+          "description": "Find strategic partners or acquisition targets with partnership readiness assessment.",
+          "size": "~60 KB",
+          "featured": false
+        },
+        {
+          "file": "docs/lenses/EYE-CUSTOM_Custom_Objective.md",
+          "icon": "🎯",
+          "name": "EYE-CUSTOM: Custom Objective",
+          "category": "Special",
+          "description": "Define your own transformation objective. Drucker routes diagnostic based on custom goal analysis.",
+          "size": "19 KB",
+          "featured": false
         }
       ]
     },
     "sectors": {
-      "label": "My Sector",
-      "title": "Sector Intelligence Packs",
-      "description": "27+ industry-specific knowledge packs with MENA regional context.",
-      "icon": "🌍",
-      "color": "teal",
+      "icon": "🏭",
+      "label": "Sectors",
+      "title": "Sector Knowledge Packs — 31 Industries",
+      "description": "Industry-specific intelligence with benchmarks, regulations, KPIs, and agent instructions for 6 MENA countries.",
       "docs": [
         {
-          "file": "sectors/RootRise_Sector_Knowledge_Framework.md",
-          "name": "Sector Knowledge Framework",
-          "description": "11-dimension structure for all sector intelligence packs.",
-          "category": "Framework",
-          "icon": "📐",
-          "size": "35 KB",
-          "featured": true,
-          "dateAdded": "2025-12-15"
+          "file": "docs/sectors/SECTOR-001_Food_Processing.md",
+          "icon": "🍞",
+          "name": "Food Processing & Beverages",
+          "category": "Manufacturing",
+          "description": "HACCP, halal certification, cold chain, food safety standards.",
+          "size": "v2.0",
+          "featured": true
         },
         {
-          "file": "sectors/RootRise_Sector_Knowledge_Complete.md",
-          "name": "Complete Sector Knowledge",
-          "description": "Consolidated sector intelligence reference.",
-          "category": "Knowledge Base",
-          "icon": "📖",
-          "size": "94 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Agriculture_Complete.md",
-          "name": "Agriculture & Agribusiness",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🌾",
-          "size": "156 KB",
-          "featured": false,
-          "dateAdded": "2025-12-15"
-        },
-        {
-          "file": "sectors/RootRise_Sector_ArtsHandicrafts_Complete.md",
-          "name": "Arts & Handicrafts",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Creative",
-          "icon": "🎨",
-          "size": "13 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Automotive_Complete.md",
-          "name": "Automotive",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🚗",
-          "size": "74 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Chemicals_Complete.md",
-          "name": "Chemicals",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🧪",
-          "size": "92 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Construction_Complete.md",
-          "name": "Construction",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🏗️",
-          "size": "92 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Cosmetics_Complete.md",
-          "name": "Cosmetics",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Consumer",
-          "icon": "💄",
-          "size": "13 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_DesignCreative_Complete.md",
-          "name": "Design & Creative",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Creative",
-          "icon": "✏️",
-          "size": "13 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Education_Complete.md",
-          "name": "Education",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "📚",
-          "size": "80 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Electronics_Complete.md",
-          "name": "Electronics",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🔌",
-          "size": "12 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Energy_Complete.md",
-          "name": "Energy",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "⚡",
-          "size": "5.5 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Environmental_Complete.md",
-          "name": "Environmental",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🌿",
-          "size": "5.5 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_FillingBottling_Complete.md",
-          "name": "Filling & Bottling",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🍾",
-          "size": "13 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Financial_Complete.md",
-          "name": "Financial Services",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "💰",
-          "size": "80 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Furniture_Complete.md",
-          "name": "Furniture",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🪑",
-          "size": "13 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Healthcare_Complete.md",
-          "name": "Healthcare",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🏥",
-          "size": "93 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Hospitality_Complete.md",
-          "name": "Hospitality",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🏨",
-          "size": "72 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Logistics_Complete.md",
-          "name": "Logistics & Transportation",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🚚",
-          "size": "51 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Maintenance_Complete.md",
-          "name": "Maintenance",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🔧",
-          "size": "13 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Media_Complete.md",
-          "name": "Media",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Creative",
-          "icon": "📺",
-          "size": "12 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Metal_Complete.md",
-          "name": "Metal & Fabrication",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "⚙️",
-          "size": "94 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Paper_Complete.md",
-          "name": "Paper & Printing",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "📄",
-          "size": "12 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Personal_Complete.md",
-          "name": "Personal Services",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "💇",
-          "size": "6 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Pharma_Complete.md",
-          "name": "Pharmaceuticals",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "💊",
-          "size": "95 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Plastics_Complete.md",
-          "name": "Plastics",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🧴",
-          "size": "12 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        },
-        {
-          "file": "sectors/RootRise_Sector_Professional_Complete.md",
-          "name": "Professional Services",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
+          "file": "docs/sectors/SECTOR-002_Textiles_Apparel.md",
           "icon": "👔",
-          "size": "81 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
+          "name": "Textiles & Apparel",
+          "category": "Manufacturing",
+          "description": "Quality standards, labor compliance, fashion cycles.",
+          "size": "v2.0",
+          "featured": true
         },
         {
-          "file": "sectors/RootRise_Sector_RealEstate_Complete.md",
-          "name": "Real Estate",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🏠",
-          "size": "77 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
+          "file": "docs/sectors/SECTOR-003_Building_Materials.md",
+          "icon": "🧱",
+          "name": "Building Materials & Construction",
+          "category": "Manufacturing",
+          "description": "Safety certifications, construction standards, logistics.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "sectors/RootRise_Sector_Retail_Complete.md",
-          "name": "Retail",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🛒",
-          "size": "70 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
+          "file": "docs/sectors/SECTOR-004_Chemicals_Plastics.md",
+          "icon": "⚗️",
+          "name": "Chemicals & Plastics",
+          "category": "Manufacturing",
+          "description": "Environmental compliance, safety protocols, REACH.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "sectors/RootRise_Sector_Security_Complete.md",
-          "name": "Security",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "🔒",
-          "size": "5.5 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
+          "file": "docs/sectors/SECTOR-005_Pharmaceuticals.md",
+          "icon": "💊",
+          "name": "Pharmaceuticals & Medical Devices",
+          "category": "Manufacturing",
+          "description": "GMP, FDA/EMA alignment, clinical standards.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "sectors/RootRise_Sector_Tech_Complete.md",
-          "name": "Technology",
-          "description": "Complete sector pack with MENA context.",
+          "file": "docs/sectors/SECTOR-006_Electronics.md",
+          "icon": "📱",
+          "name": "Electronics & Electrical Equipment",
+          "category": "Manufacturing",
+          "description": "Quality systems, RoHS compliance, testing standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-007_Automotive.md",
+          "icon": "🚗",
+          "name": "Automotive Parts & Assembly",
+          "category": "Manufacturing",
+          "description": "IATF 16949, OEM requirements, supply chain.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-008_Metal_Fabrication.md",
+          "icon": "🔩",
+          "name": "Metal Fabrication & Machinery",
+          "category": "Manufacturing",
+          "description": "Precision standards, export certifications, quality.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-009_Professional_Services.md",
+          "icon": "💼",
+          "name": "Professional Services",
           "category": "Services",
+          "description": "Legal, accounting, consulting credentials and practices.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-010_Healthcare_Services.md",
+          "icon": "🏥",
+          "name": "Healthcare Services",
+          "category": "Services",
+          "description": "Medical licensing, accreditation, patient care standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-011_Education_Training.md",
+          "icon": "🎓",
+          "name": "Education & Training",
+          "category": "Services",
+          "description": "Accreditation, quality assurance, curriculum standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-012_Hospitality_Tourism.md",
+          "icon": "🏨",
+          "name": "Hospitality & Tourism",
+          "category": "Services",
+          "description": "Service standards, seasonality, customer experience.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-013_Transportation_Logistics.md",
+          "icon": "🚚",
+          "name": "Transportation & Logistics",
+          "category": "Services",
+          "description": "Fleet management, compliance, route optimization.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-014_Financial_Services.md",
+          "icon": "🏦",
+          "name": "Financial Services (Non-Banking)",
+          "category": "Services",
+          "description": "Regulatory compliance, fintech integration, risk management.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-015_Creative_Media.md",
+          "icon": "🎬",
+          "name": "Creative & Media Services",
+          "category": "Services",
+          "description": "IP protection, project management, content standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-016_Facility_Management.md",
+          "icon": "🏢",
+          "name": "Facility Management & Security",
+          "category": "Services",
+          "description": "Service standards, licensing, safety protocols.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-017_Software_IT.md",
           "icon": "💻",
-          "size": "82 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
+          "name": "Software Development & IT Services",
+          "category": "Technology",
+          "description": "Agile practices, security standards, SaaS metrics.",
+          "size": "v2.0",
+          "featured": true
         },
         {
-          "file": "sectors/RootRise_Sector_Telecom_Complete.md",
-          "name": "Telecommunications",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Services",
-          "icon": "📡",
-          "size": "7 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
+          "file": "docs/sectors/SECTOR-018_Ecommerce.md",
+          "icon": "🛒",
+          "name": "E-commerce & Digital Platforms",
+          "category": "Technology",
+          "description": "Conversion optimization, logistics, UX standards.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "sectors/RootRise_Sector_Textiles_Complete.md",
-          "name": "Textiles",
-          "description": "Complete sector pack with MENA context.",
-          "category": "Industrial",
-          "icon": "🧵",
-          "size": "80 KB",
-          "featured": false,
-          "dateAdded": "2025-12-16"
-        }
-      ]
-    },
-    "design": {
-      "label": "Design System",
-      "title": "Visual Design",
-      "description": "Color system, visual palette, and design references for RootRise v6.5.",
-      "icon": "🎨",
-      "color": "burgundy",
-      "docs": [
-        {
-          "file": "Design/RootRise_Color_System_v6.5_Reference.md",
-          "name": "Color System v6.5 Reference",
-          "description": "Complete color system documentation with all 4 themes.",
-          "category": "Colors",
-          "icon": "🎨",
-          "size": "~10 KB",
-          "featured": true,
-          "dateAdded": "2025-12-17"
+          "file": "docs/sectors/SECTOR-019_FinTech.md",
+          "icon": "📲",
+          "name": "FinTech",
+          "category": "Technology",
+          "description": "Regulatory compliance, security, growth metrics.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Design/RootRise_Visual_Palette_v6.5_Final.html",
-          "name": "Visual Palette v6.5",
-          "description": "Interactive visual reference with theme switcher.",
-          "category": "Visual",
-          "icon": "🖼️",
-          "size": "~30 KB",
-          "featured": false,
-          "dateAdded": "2025-12-17"
-        }
-      ]
-    },
-    "presentations": {
-      "label": "Presentations",
-      "title": "Pitch Decks & Presentations",
-      "description": "Investor decks, partner presentations, technical guides, and strategic materials.",
-      "icon": "📊",
-      "color": "gold",
-      "docs": [
-       {
-          "file": "Presentations/DEVONEERS_RootRise_AI-Powered_Dec_2025.pdf",
-          "name": "18th Dec Update by Doaa",
-          "description": "Slides for development organizations. Reshuffled sequence: RootRise technical concept, Platform, Team, Commercialization and Growth pathway.",
-          "category": "Partner",
-          "icon": "🤝",
-          "size": "13.7 MB",
-          "featured": false,
-          "dateAdded": "2025-12-18"
+          "file": "docs/sectors/SECTOR-020_CleanTech.md",
+          "icon": "🌱",
+          "name": "CleanTech & Renewable Energy",
+          "category": "Technology",
+          "description": "Environmental regulations, incentive programs, standards.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Presentations/RootRise_by_DEVONEERS_v2_compressed.pdf",
-          "name": "RootRise by DEVONEERS v2",
-          "description": "Main investor presentation deck - comprehensive platform overview.",
-          "category": "Investor",
-          "icon": "📈",
-          "size": "29 MB",
-          "featured": true,
-          "dateAdded": "2025-12-10"
+          "file": "docs/sectors/SECTOR-021_Wholesale.md",
+          "icon": "📦",
+          "name": "Wholesale Distribution",
+          "category": "Trade",
+          "description": "Inventory management, supplier relationships, logistics.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Presentations/DEVONEERS_-_RootRise_-_Dec_2025.pdf",
-          "name": "DEVONEERS RootRise Dec 2025",
-          "description": "Latest December 2025 presentation deck.",
-          "category": "Investor",
-          "icon": "📊",
-          "size": "14 MB",
-          "featured": true,
-          "dateAdded": "2025-12-14"
+          "file": "docs/sectors/SECTOR-022_Retail.md",
+          "icon": "🏪",
+          "name": "Retail Trade",
+          "category": "Trade",
+          "description": "Customer experience, margins, omnichannel operations.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Presentations/DEVONEERS_RootRise_EBRD_Star_Venture.pdf",
-          "name": "EBRD Star Venture Presentation",
-          "description": "EBRD Star Venture Programme presentation deck.",
-          "category": "EBRD",
-          "icon": "🌟",
-          "size": "6.6 MB",
-          "featured": true,
-          "dateAdded": "2025-12-17"
+          "file": "docs/sectors/SECTOR-023_Import_Export.md",
+          "icon": "🚢",
+          "name": "Import/Export Trading",
+          "category": "Trade",
+          "description": "Trade compliance, customs, international logistics.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Presentations/RootRise_Orchestrated _Breaking_the_Mold_compressed.pdf",
-          "name": "RootRise Orchestrated: Breaking the Mold",
-          "description": "Multi-agent orchestration and architecture presentation.",
-          "category": "Technical",
-          "icon": "🔄",
-          "size": "33 MB",
-          "featured": false,
-          "dateAdded": "2025-12-04"
+          "file": "docs/sectors/SECTOR-024_Franchising.md",
+          "icon": "🔗",
+          "name": "Franchising & Licensing",
+          "category": "Trade",
+          "description": "Brand standards, expansion models, compliance.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Presentations/RootRise_Architecture_Upgrade.pdf",
-          "name": "Architecture Upgrade",
-          "description": "Technical architecture upgrade presentation.",
-          "category": "Technical",
+          "file": "docs/sectors/SECTOR-025_Agriculture.md",
+          "icon": "🌾",
+          "name": "Agriculture & Agribusiness",
+          "category": "Primary",
+          "description": "Seasonality, certifications, supply chain.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-026_Fishing_Aquaculture.md",
+          "icon": "🐟",
+          "name": "Fishing & Aquaculture",
+          "category": "Primary",
+          "description": "Sustainability, cold chain, export standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-027_Mining.md",
+          "icon": "⛏️",
+          "name": "Mining & Quarrying",
+          "category": "Primary",
+          "description": "Safety protocols, environmental compliance.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-028_Oil_Gas.md",
+          "icon": "🛢️",
+          "name": "Oil & Gas Services",
+          "category": "Primary",
+          "description": "Safety certifications, industry standards.",
+          "size": "v2.0",
+          "featured": false
+        },
+        {
+          "file": "docs/sectors/SECTOR-029_Real_Estate.md",
           "icon": "🏗️",
-          "size": "1.8 MB",
-          "featured": false,
-          "dateAdded": "2025-11-29"
+          "name": "Real Estate Development",
+          "category": "Specialized",
+          "description": "Project management, financing, regulations.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Presentations/AI_Epistemology_ Foundations_Limits.pdf",
-          "name": "AI Epistemology: Foundations & Limits",
-          "description": "Deep dive into AI knowledge foundations and limitations.",
-          "category": "Research",
-          "icon": "🧠",
-          "size": "129 KB",
-          "featured": false,
-          "dateAdded": "2025-12-04"
+          "file": "docs/sectors/SECTOR-030_Waste_Management.md",
+          "icon": "♻️",
+          "name": "Waste Management & Recycling",
+          "category": "Specialized",
+          "description": "Environmental compliance, processing standards.",
+          "size": "v2.0",
+          "featured": false
         },
         {
-          "file": "Presentations/The_Chinese_Room_Modern_AI.pdf",
-          "name": "The Chinese Room & Modern AI",
-          "description": "Philosophical exploration of AI understanding and consciousness.",
-          "category": "Research",
-          "icon": "🏛️",
-          "size": "143 KB",
-          "featured": false,
-          "dateAdded": "2025-12-14"
-        },
-        {
-          "file": "Presentations/API_Terminology_Guide.pdf",
-          "name": "API Terminology Guide",
-          "description": "Technical reference for API terminology and concepts.",
-          "category": "Guide",
-          "icon": "📖",
-          "size": "6 KB",
-          "featured": false,
-          "dateAdded": "2025-11-28"
-        },
-        {
-          "file": "Presentations/MultiAgent_Safety_Guide.pdf",
-          "name": "Multi-Agent Safety Guide",
-          "description": "Safety considerations for multi-agent AI systems.",
-          "category": "Guide",
-          "icon": "🛡️",
-          "size": "6 KB",
-          "featured": false,
-          "dateAdded": "2025-11-28"
-        },
-        {
-          "file": "Presentations/Security_Posture_Guide.pdf",
-          "name": "Security Posture Guide",
-          "description": "Security best practices and posture guidelines.",
-          "category": "Guide",
-          "icon": "🔐",
-          "size": "7 KB",
-          "featured": false,
-          "dateAdded": "2025-11-28"
+          "file": "docs/sectors/SECTOR-031_Artisanal.md",
+          "icon": "🎨",
+          "name": "Artisanal & Handicrafts",
+          "category": "Specialized",
+          "description": "Heritage preservation, export potential, quality.",
+          "size": "v2.0",
+          "featured": false
         }
       ]
     },
-    "resources": {
-      "label": "Resources",
-      "title": "Additional Materials",
-      "description": "Strategic guides, summaries, and supplementary documentation.",
-      "icon": "📚",
-      "color": "gold",
+    "agents": {
+      "icon": "🤖",
+      "label": "Agents",
+      "title": "The Pantheon — 11 AI Agents",
+      "description": "Specialist AI agents named after business pioneers. Each agent has a domain, methodology, and persona.",
       "docs": [
         {
-          "file": "resources/RootRise_v6_Master_Summary.docx",
-          "name": "v6 Master Summary",
-          "description": "Complete project summary document.",
-          "category": "Summary",
-          "icon": "📋",
-          "size": "18 KB",
-          "featured": true,
-          "dateAdded": "2025-12-17"
+          "file": "docs/agents/AGENT_Drucker.md",
+          "icon": "🎯",
+          "name": "Drucker — The Conductor",
+          "category": "Supervisor",
+          "description": "Orchestration & Strategy. Management by Objectives. Always active, routes all diagnostic flow.",
+          "size": "Reference",
+          "featured": true
+        },
+        {
+          "file": "docs/agents/AGENT_Graham.md",
+          "icon": "💎",
+          "name": "Graham — The Numbers Whisperer",
+          "category": "Core",
+          "description": "Financial Analysis. Value Investing Principles. Always active, provides financial baseline.",
+          "size": "Reference",
+          "featured": true
+        },
+        {
+          "file": "docs/agents/AGENT_Marvin.md",
+          "icon": "⚙️",
+          "name": "Marvin — The Optimizer",
+          "category": "Core",
+          "description": "Operations & Efficiency. Lean Manufacturing. Active for manufacturing and operations lenses.",
+          "size": "Reference",
+          "featured": true
+        },
+        {
+          "file": "docs/agents/AGENT_Lovelace.md",
+          "icon": "🔮",
+          "name": "Lovelace — The Digitizer",
+          "category": "Specialist",
+          "description": "Technology & Digital. Digital Maturity Models. Active for digital transformation focus.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/agents/AGENT_Mayo.md",
+          "icon": "🌱",
+          "name": "Mayo — The People Person",
+          "category": "Specialist",
+          "description": "HR & Culture. Human Relations Theory. Active for workforce development focus.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/agents/AGENT_Porter.md",
+          "icon": "♟️",
+          "name": "Porter — The Strategist",
+          "category": "Specialist",
+          "description": "Market & Competition. Five Forces Analysis. Active for market and strategy lenses.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/agents/AGENT_Ohno.md",
+          "icon": "🌊",
+          "name": "Ohno — The Flow Master",
+          "category": "Specialist",
+          "description": "Supply Chain & Logistics. Toyota Production System. Active for supply chain focus.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/agents/AGENT_Deming.md",
+          "icon": "📐",
+          "name": "Deming — The Perfectionist",
+          "category": "Specialist",
+          "description": "Quality & Compliance. PDCA Cycle. Active for quality and risk lenses.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/agents/AGENT_Ricardo.md",
+          "icon": "🧭",
+          "name": "Ricardo — The Globalizer",
+          "category": "Specialist",
+          "description": "Export & Trade. Comparative Advantage. Active for export readiness lens.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/agents/AGENT_Landor.md",
+          "icon": "📣",
+          "name": "Landor — The Storyteller",
+          "category": "Specialist",
+          "description": "Brand & Marketing. Brand Architecture. Active for brand and marketing lenses.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/agents/AGENT_Tufte.md",
+          "icon": "📊",
+          "name": "Tufte — The Visualizer",
+          "category": "Utility",
+          "description": "Data Visualization & Reporting. Always active as final step for report generation.",
+          "size": "Reference",
+          "featured": false
+        }
+      ]
+    },
+    "countries": {
+      "icon": "🌍",
+      "label": "Countries",
+      "title": "MENA Coverage — 6 Countries",
+      "description": "Country-specific context including regulations, incentives, market characteristics, and localization for each MENA market.",
+      "docs": [
+        {
+          "file": "docs/countries/COUNTRY_EG_Egypt.md",
+          "icon": "🇪🇬",
+          "name": "Egypt",
+          "category": "Primary Market",
+          "description": "Largest SME base in MENA. Primary market with comprehensive regulatory and incentive mapping.",
+          "size": "Reference",
+          "featured": true
+        },
+        {
+          "file": "docs/countries/COUNTRY_SA_Saudi.md",
+          "icon": "🇸🇦",
+          "name": "Saudi Arabia",
+          "category": "Growth Market",
+          "description": "Vision 2030 alignment, Saudization requirements, and mega-project opportunities.",
+          "size": "Reference",
+          "featured": true
+        },
+        {
+          "file": "docs/countries/COUNTRY_AE_UAE.md",
+          "icon": "🇦🇪",
+          "name": "United Arab Emirates",
+          "category": "Growth Market",
+          "description": "Free zone structures, high digitalization, and regional hub positioning.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/countries/COUNTRY_JO_Jordan.md",
+          "icon": "🇯🇴",
+          "name": "Jordan",
+          "category": "Expansion Market",
+          "description": "Services focus, regional hub, and trade agreements context.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/countries/COUNTRY_LB_Lebanon.md",
+          "icon": "🇱🇧",
+          "name": "Lebanon",
+          "category": "Expansion Market",
+          "description": "Dollarized economy, diaspora focus, and services expertise. NEW in v7.0.",
+          "size": "Reference",
+          "featured": false
+        },
+        {
+          "file": "docs/countries/COUNTRY_MA_Morocco.md",
+          "icon": "🇲🇦",
+          "name": "Morocco",
+          "category": "Expansion Market",
+          "description": "EU proximity, Africa gateway, and francophone market access. NEW in v7.0.",
+          "size": "Reference",
+          "featured": false
         }
       ]
     }
