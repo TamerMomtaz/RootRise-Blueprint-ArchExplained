@@ -3,7 +3,7 @@
 **Version:** 2.0  
 **Last Updated:** January 5, 2026  
 **Status:** Production-Ready Framework  
-**Author:** Tee (CTO)  
+**Author:** Tee (the ionganinc)  
 **For:** Ahmed El-Gazzar (Technical DevOps Lead) & Development Team
 
 ---
