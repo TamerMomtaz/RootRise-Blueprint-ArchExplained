@@ -1,7 +1,7 @@
 {
   "meta": {
     "version": "7.0",
-    "lastUpdated": "Jan 2026",
+    "lastUpdated": "2026-01-06",
     "platform": "RootRise by DEVONEERS",
     "description": "Complete technical documentation for The Pantheon AI-powered SME transformation platform"
   },
@@ -13,7 +13,7 @@
       "description": "Foundation documents defining the RootRise platform architecture, system design, and technical specifications.",
       "docs": [
         {
-          "file": "architecture/MASTER SUMMARY/RootRise_Master_Summary_v7.0.md",
+          "file": "architecture/MASTER%20SUMMARY/RootRise_Master_Summary_v7.0.md",
           "icon": "📋",
           "name": "Master Summary v7.0",
           "category": "Overview",
@@ -31,7 +31,7 @@
           "featured": true
         },
         {
-          "file": "architecture/MASTER SUMMARY/RootRise_Technical_Handoff_v7.0.md",
+          "file": "architecture/MASTER%20SUMMARY/RootRise_Technical_Handoff_v7.0.md",
           "icon": "🔧",
           "name": "Technical Handoff v7.0",
           "category": "Development",
@@ -40,7 +40,7 @@
           "featured": true
         },
         {
-          "file": "architecture/MASTER SUMMARY/RootRise_Project_Brief_v3.0.md",
+          "file": "architecture/MASTER%20SUMMARY/RootRise_Project_Brief_v3.0.md",
           "icon": "📊",
           "name": "Project Brief v3.0",
           "category": "Overview",
@@ -66,7 +66,7 @@
       "description": "Questionnaire structure, report templates, and data model definitions for the diagnostic system.",
       "docs": [
         {
-          "file": "architecture/QUESTION SCHEME/RootRise_Questionnaire_Schema_v2.0.md",
+          "file": "architecture/QUESTION%20SCHEME/RootRise_Questionnaire_Schema_v2.0.md",
           "icon": "📝",
           "name": "Questionnaire Schema v2.0",
           "category": "Schema",
@@ -92,7 +92,7 @@
       "description": "Strategic transformation lenses that route questions, activate agents, and shape diagnostic output.",
       "docs": [
         {
-          "file": "Design/&Eye/EYE-000_The_Crema.md",
+          "file": "Design/%26Eye/EYE-000_The_Crema.md",
           "icon": "☕",
           "name": "EYE-000: The Crema",
           "category": "Special",
@@ -101,7 +101,7 @@
           "featured": true
         },
         {
-          "file": "Design/&Eye/EYE-001_export_readiness.md",
+          "file": "Design/%26Eye/EYE-001_export_readiness.md",
           "icon": "🌍",
           "name": "EYE-001: Export Expansion",
           "category": "Growth",
@@ -110,7 +110,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-002_Investment_Readiness.md",
+          "file": "Design/%26Eye/EYE-002_Investment_Readiness.md",
           "icon": "💰",
           "name": "EYE-002: Investment Readiness",
           "category": "Growth",
@@ -119,7 +119,7 @@
           "featured": true
         },
         {
-          "file": "Design/&Eye/EYE-003_Digital_Transformation.md",
+          "file": "Design/%26Eye/EYE-003_Digital_Transformation.md",
           "icon": "💻",
           "name": "EYE-003: Digital Transformation",
           "category": "Transition",
@@ -128,7 +128,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-004_Operational_Excellence.md",
+          "file": "Design/%26Eye/EYE-004_Operational_Excellence.md",
           "icon": "⚙️",
           "name": "EYE-004: Operational Excellence",
           "category": "Operations",
@@ -137,7 +137,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-005_Market_Expansion.md",
+          "file": "Design/%26Eye/EYE-005_Market_Expansion.md",
           "icon": "📈",
           "name": "EYE-005: Market Expansion",
           "category": "Growth",
@@ -146,7 +146,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-006_Brand_Building.md",
+          "file": "Design/%26Eye/EYE-006_Brand_Building.md",
           "icon": "🏷️",
           "name": "EYE-006: Brand Building",
           "category": "Growth",
@@ -155,7 +155,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-007_Workforce_Development.md",
+          "file": "Design/%26Eye/EYE-007_Workforce_Development.md",
           "icon": "👥",
           "name": "EYE-007: Workforce Development",
           "category": "Transition",
@@ -164,7 +164,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-008_Supply_Chain_Optimization.md",
+          "file": "Design/%26Eye/EYE-008_Supply_Chain_Optimization.md",
           "icon": "🔗",
           "name": "EYE-008: Supply Chain Optimization",
           "category": "Operations",
@@ -173,7 +173,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-009_Sustainability_ESG.md",
+          "file": "Design/%26Eye/EYE-009_Sustainability_ESG.md",
           "icon": "🌿",
           "name": "EYE-009: Sustainability & ESG",
           "category": "Impact",
@@ -182,7 +182,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-010_Innovation_RD.md",
+          "file": "Design/%26Eye/EYE-010_Innovation_RD.md",
           "icon": "💡",
           "name": "EYE-010: Innovation & R&D",
           "category": "Growth",
@@ -191,7 +191,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-011_Customer_Experience.md",
+          "file": "Design/%26Eye/EYE-011_Customer_Experience.md",
           "icon": "⭐",
           "name": "EYE-011: Customer Experience",
           "category": "Operations",
@@ -200,7 +200,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-012_Cost_Optimization.md",
+          "file": "Design/%26Eye/EYE-012_Cost_Optimization.md",
           "icon": "💵",
           "name": "EYE-012: Cost Optimization",
           "category": "Operations",
@@ -209,7 +209,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-013_Risk_Resilience.md",
+          "file": "Design/%26Eye/EYE-013_Risk_Resilience.md",
           "icon": "🛡️",
           "name": "EYE-013: Risk & Resilience",
           "category": "Operations",
@@ -218,7 +218,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-014_Succession_Governance.md",
+          "file": "Design/%26Eye/EYE-014_Succession_Governance.md",
           "icon": "👔",
           "name": "EYE-014: Succession & Governance",
           "category": "Transition",
@@ -227,7 +227,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-015_Partnership_MA.md",
+          "file": "Design/%26Eye/EYE-015_Partnership_MA.md",
           "icon": "🤝",
           "name": "EYE-015: Partnership & M&A",
           "category": "Impact",
@@ -236,7 +236,7 @@
           "featured": false
         },
         {
-          "file": "Design/&Eye/EYE-CUSTOM_Custom_Object.md",
+          "file": "Design/%26Eye/EYE-CUSTOM_Custom_Object.md",
           "icon": "🎯",
           "name": "EYE-CUSTOM: Custom Objective",
           "category": "Special",
@@ -253,7 +253,7 @@
       "description": "Industry-specific intelligence with benchmarks, regulations, and KPIs for MENA markets.",
       "docs": [
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_FoodBeverage_Manufacturing_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_FoodBeverage_Manufacturing_Complete.md",
           "icon": "🍞",
           "name": "Food & Beverage Manufacturing",
           "category": "Manufacturing",
@@ -262,7 +262,7 @@
           "featured": true
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Textiles_Apparel_Complete_v2 (1).md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Textiles_Apparel_Complete_v2%20(1).md",
           "icon": "👔",
           "name": "Textiles & Apparel",
           "category": "Manufacturing",
@@ -271,7 +271,7 @@
           "featured": true
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Technology_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Technology_Complete_v2.md",
           "icon": "💻",
           "name": "Technology & Software",
           "category": "Technology",
@@ -280,7 +280,7 @@
           "featured": true
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Agriculture_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Agriculture_Complete_v2.md",
           "icon": "🌾",
           "name": "Agriculture & Agribusiness",
           "category": "Primary",
@@ -289,7 +289,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Automotive_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Automotive_Complete_v2.md",
           "icon": "🚗",
           "name": "Automotive",
           "category": "Manufacturing",
@@ -298,7 +298,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Beauty_Wellness_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Beauty_Wellness_Complete.md",
           "icon": "💄",
           "name": "Beauty & Wellness",
           "category": "Services",
@@ -307,7 +307,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Chemicals_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Chemicals_Complete_v2.md",
           "icon": "⚗️",
           "name": "Chemicals",
           "category": "Manufacturing",
@@ -316,7 +316,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Construction_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Construction_Complete_v2.md",
           "icon": "🏗️",
           "name": "Construction",
           "category": "Manufacturing",
@@ -325,7 +325,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Creative_Industries_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Creative_Industries_Complete.md",
           "icon": "🎬",
           "name": "Creative Industries",
           "category": "Services",
@@ -334,7 +334,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Education_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Education_Complete_v2.md",
           "icon": "🎓",
           "name": "Education & Training",
           "category": "Services",
@@ -343,7 +343,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Electronics_Manufacturing_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Electronics_Manufacturing_Complete.md",
           "icon": "📱",
           "name": "Electronics Manufacturing",
           "category": "Manufacturing",
@@ -352,7 +352,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Energy_Utilities_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Energy_Utilities_Complete.md",
           "icon": "⚡",
           "name": "Energy & Utilities",
           "category": "Primary",
@@ -361,7 +361,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Environmental_Services_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Environmental_Services_Complete.md",
           "icon": "♻️",
           "name": "Environmental Services",
           "category": "Specialized",
@@ -370,7 +370,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_FillingBottling_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_FillingBottling_Complete.md",
           "icon": "🍶",
           "name": "Filling & Bottling",
           "category": "Manufacturing",
@@ -379,7 +379,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Financial_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Financial_Complete_v2.md",
           "icon": "🏦",
           "name": "Financial Services",
           "category": "Services",
@@ -388,7 +388,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Furniture_Manufacturing_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Furniture_Manufacturing_Complete.md",
           "icon": "🪑",
           "name": "Furniture Manufacturing",
           "category": "Manufacturing",
@@ -397,7 +397,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Healthcare_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Healthcare_Complete_v2.md",
           "icon": "🏥",
           "name": "Healthcare Services",
           "category": "Services",
@@ -406,7 +406,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_HomeBased_Micro_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_HomeBased_Micro_Complete.md",
           "icon": "🏠",
           "name": "Home-Based & Micro",
           "category": "Specialized",
@@ -415,7 +415,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Hospitality_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Hospitality_Complete_v2.md",
           "icon": "🏨",
           "name": "Hospitality & Tourism",
           "category": "Services",
@@ -424,7 +424,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Logistics_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Logistics_Complete_v2.md",
           "icon": "🚚",
           "name": "Logistics & Transportation",
           "category": "Services",
@@ -433,7 +433,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Maintenance_Repair_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Maintenance_Repair_Complete.md",
           "icon": "🔧",
           "name": "Maintenance & Repair",
           "category": "Services",
@@ -442,7 +442,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Metal_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Metal_Complete_v2.md",
           "icon": "🔩",
           "name": "Metal Fabrication",
           "category": "Manufacturing",
@@ -451,7 +451,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_PaperPrinting_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_PaperPrinting_Complete.md",
           "icon": "📰",
           "name": "Paper & Printing",
           "category": "Manufacturing",
@@ -460,7 +460,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Pharmaceuticals_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Pharmaceuticals_Complete_v2.md",
           "icon": "💊",
           "name": "Pharmaceuticals",
           "category": "Manufacturing",
@@ -469,7 +469,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Plastics_Manufacturing_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Plastics_Manufacturing_Complete.md",
           "icon": "🧪",
           "name": "Plastics Manufacturing",
           "category": "Manufacturing",
@@ -478,7 +478,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Professional_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Professional_Complete_v2.md",
           "icon": "💼",
           "name": "Professional Services",
           "category": "Services",
@@ -487,7 +487,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_RealEstate_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_RealEstate_Complete_v2.md",
           "icon": "🏢",
           "name": "Real Estate",
           "category": "Specialized",
@@ -496,7 +496,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Retail_Complete_v2.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Retail_Complete_v2.md",
           "icon": "🏪",
           "name": "Retail Trade",
           "category": "Trade",
@@ -505,7 +505,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Security_Services_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Security_Services_Complete.md",
           "icon": "🛡️",
           "name": "Security Services",
           "category": "Services",
@@ -514,7 +514,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Telecommunications_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Telecommunications_Complete.md",
           "icon": "📡",
           "name": "Telecommunications",
           "category": "Technology",
@@ -523,7 +523,7 @@
           "featured": false
         },
         {
-          "file": "Sector Knowledge V2 2026/RootRise_Sector_Trading_Distribution_Complete.md",
+          "file": "Sector%20Knowledge%20V2%202026/RootRise_Sector_Trading_Distribution_Complete.md",
           "icon": "📦",
           "name": "Trading & Distribution",
           "category": "Trade",
@@ -572,50 +572,6 @@
           "name": "Agent Quick Reference",
           "category": "Reference",
           "description": "Quick reference card for all 11 agents with personas and domains.",
-          "size": "Reference",
-          "featured": false
-        }
-      ]
-    },
-    "resources": {
-      "icon": "📚",
-      "label": "Resources",
-      "title": "Reference Materials & Indexes",
-      "description": "Quick reference guides, indexes, and supporting documentation.",
-      "docs": [
-        {
-          "file": "resources/RootRise_Lens_Index.md",
-          "icon": "🔍",
-          "name": "Lens Index",
-          "category": "Index",
-          "description": "Complete index of all 17 transformation lenses with codes and descriptions.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "resources/RootRise_Sector_Index.md",
-          "icon": "🏭",
-          "name": "Sector Index",
-          "category": "Index",
-          "description": "Complete index of all 31 sector knowledge packs with categories.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "Sector Knowledge V2 2026/framework/RootRise_Sector_Knowledge_Framework_v2.md",
-          "icon": "📐",
-          "name": "Sector Knowledge Framework v2",
-          "category": "Framework",
-          "description": "Framework document explaining sector pack structure and methodology.",
-          "size": "Reference",
-          "featured": false
-        },
-        {
-          "file": "Design/RootRise_Color_System_v6.5_Reference.md",
-          "icon": "🎨",
-          "name": "Color System Reference",
-          "category": "Design",
-          "description": "Complete color palette and design system documentation.",
           "size": "Reference",
           "featured": false
         }
